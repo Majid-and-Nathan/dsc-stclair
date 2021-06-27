@@ -1,0 +1,115 @@
+
+@import '../../../styles.scss';
+
+.navbar {
+  height: 100px;
+  background-color: $black;
+  min-width: 100vw;
+  position: sticky;
+}
+.col {
+  margin-left: 0;
+}
+.navbar-nav {
+  text-align: right;
+  float: right;
+}
+
+.nav-link {
+  font-size: 19px;
+  letter-spacing: 3px;
+}
+.nav-link {
+  float: right;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.navbar-nav a:hover {
+  transform: scale(1.1);
+}
+
+/* Underline From Center */
+.navbar-nav a {
+  color: whitesmoke;
+  font-family: 'Hammersmith One', sans-serif;
+  margin: 12px;
+  font-size: 27px;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.navbar-nav a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  transition: all 0.2s ease-in-out;
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.15s ease 0s, left 0.15s ease 0s;
+
+  width: 0;
+}
+.navbar-nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.active-link::after {
+  width: 100% !important;
+  left: 0 !important;
+}
+
+.active-link {
+  transform: scale(1.1) !important;
+}
+
+img {
+  width: 210px;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+button {
+  z-index: 1000;
+
+  margin-right: 10px;
+  color: white;
+}
+
+.mat-icon {
+  font-size: 50px;
+  z-index: 1000;
+  margin-right: 25px;
+  position: relative;
+}
+.nav-link {
+  vertical-align: auto;
+}
+
+
+.social-icons {
+  color: white;
+  margin: auto;
+  padding: 0;
+  font-size: 60px;
+  text-align: center;
+}
+.mat-ripple-element {
+  display: none;
+}
+@media (max-width: 993px) {
+  .nav-link {
+    display: none;
+  }
+}

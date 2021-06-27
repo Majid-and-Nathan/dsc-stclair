@@ -1,0 +1,59 @@
+@import '../../../styles.scss';
+
+.footer{
+    background-color: $dark-blue;
+    color: $white;
+    display: flex;
+    width: 100%;
+    font-size: .8125rem;
+    align-items: center;
+    height: 4.688rem;
+}
+
+.container{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    @include mobile{
+        grid-template-columns: unset;
+    }
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+
+    @include mobile{
+        display: none;
+    }
+}
+
+.links-mobile{
+    display: none;
+
+    @include mobile{
+        display: flex;
+    }
+}
+
+.link{
+    color: $white;
+    text-decoration: none;
+    padding-left: 20px;
+
+    @include mobile{
+        padding-left: unset;
+        padding-right: 20px;
+    }
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: $white;
+}
+

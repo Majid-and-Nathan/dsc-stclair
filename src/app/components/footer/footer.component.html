@@ -1,0 +1,17 @@
+<footer class="footer">
+    <div class="container">
+        <div class="credit">
+            &copy; {{credit}}
+            <div class="links-mobile" *ngIf="links">
+                <div class="link-list" *ngFor="let link of links">
+                    <a [href]="link.href" class="link">{{link.name}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="links" *ngIf="links">
+            <div class="link-list" *ngFor="let link of links">
+                <a [href]="link.href" class="link">{{link.name}}</a>
+            </div>
+        </div>
+    </div>
+</footer>

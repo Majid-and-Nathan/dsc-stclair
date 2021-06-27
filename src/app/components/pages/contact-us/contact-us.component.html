@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <agm-map [latitude]="content.lat" [longitude]="content.long">
+    <agm-marker
+      [latitude]="content.lat"
+      [longitude]="content.long"
+    ></agm-marker>
+  </agm-map>
+</div>
+<div class="container-fluid intro-box">
+  <div class="text-box">
+    <h1>{{ content.title }}</h1>
+    <p>
+      {{ content.description }}
+    </p>
+  </div>
+</div>
+<div class="container-fluid form-holder">
+  <div class="row justify-content-center">
+    <div class="col-lg-4">
+      <form>
+        <mat-form-field class="full-width">
+          <mat-label>Full Name</mat-label>
+          <input matInput />
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Subject</mat-label>
+          <input matInput />
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Message</mat-label>
+          <input class="big-box" matInput />
+        </mat-form-field>
+        <div class="d-flex justify-content-center">
+          <app-button
+            [colour]="'primary'"
+            [type]="'raised'"
+            [text]="'SEND'"
+          ></app-button>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-4">
+      <div class="row">
+
+        <div class="col p-2">
+          <h2>Location</h2>
+          <h3>
+            {{ content.address }}
+          </h3>
+          <h3>
+            {{ content.cityAndProvince }}
+          </h3>
+          <h3>
+            {{ content.postalCode }}
+          </h3>
+        </div>
+        <div class="col p-2">col1</div>
+    
+        <div class="w-100 p-4"></div>
+    
+        <div class="col p-2">
+          <h2>Contact</h2>
+          <h3>
+            {{ content.companyEmail }}
+          </h3>
+          <h3>
+            {{ content.companyPhoneNumber }}
+          </h3>
+        </div>
+      
+        <div class="col p-2">col12</div>
+      
+      </div>
+    </div>
+   
+
+
+  </div>
+</div>

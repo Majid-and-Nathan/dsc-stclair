@@ -1,0 +1,114 @@
+@import "../../../styles.scss";
+
+.mat-card{
+  @include mobile{
+    border-radius: 0px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  @include tablets{
+    border-radius: 0px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  @include very-small-screens{
+    border-radius: 0px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.carousel-container{
+  height: auto;
+}
+
+.inner-content-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+
+  @include mobile{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @include tablets{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @include very-small-screens{
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.image-container{
+  width: 100%;
+}
+
+.image{
+  width: 100%;
+  height: 70vh;
+
+  @include mobile{
+    height: 30vh;
+  }
+
+  @include tablets{
+    height: 30vh;
+  }
+
+  @include very-small-screens{
+    height: 30vh;
+  }
+}
+
+.content-container{
+  display: grid;
+  position: absolute;
+  background-color: $black;
+  opacity: 0.85;
+  margin: 50px;
+  height: auto;
+  width: 30%;
+  max-width: 400px;
+  color: $white;
+  text-align: center;
+  align-items: center;
+  min-height: 300px;
+
+  @include mobile{
+    opacity: unset;
+    width: 100%;
+    margin: unset;
+    max-width: unset;
+    position: unset;
+    height: 60vh;
+    max-height: 500px;
+  }
+
+  @include tablets{
+    opacity: unset;
+    width: 100%;
+    margin: unset;
+    max-width: unset;
+    position: unset;
+    height: 60vh;
+    max-height: 500px;
+  }
+
+  @include very-small-screens{
+    opacity: unset;
+    width: 100%;
+    margin: unset;
+    max-width: unset;
+    position: unset;
+    height: 60vh;
+    max-height: 500px;
+  }
+
+}

@@ -1,0 +1,84 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+@import "~bootstrap/scss/bootstrap";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+$white: #ffffff;
+$dark-blue: #3d5a80;
+$black: #000000;
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$angular-boiler-plate-primary: mat-palette($mat-indigo);
+$angular-boiler-plate-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$angular-boiler-plate-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$angular-boiler-plate-theme: mat-light-theme(
+  (
+    color: (
+      primary: $angular-boiler-plate-primary,
+      accent: $angular-boiler-plate-accent,
+      warn: $angular-boiler-plate-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($angular-boiler-plate-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.dialog-container-custom .mat-dialog-container {
+  padding: 0;
+  background: black;
+}
+/* Importing Bootstrap SCSS file. */
+
+/* Media Queries */
+@mixin very-small-screens {
+  @media (max-width: 200px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (min-width: 200px) and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media (min-width: 481px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin small-screens {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin large-screens {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}

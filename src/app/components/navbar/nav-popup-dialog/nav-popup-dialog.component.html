@@ -1,0 +1,16 @@
+<div class="navbar-nav">
+  <div class="d-flex flex-column">
+    <a
+      (click) = "closeDialog()" 
+      *ngFor="let link of links"
+      matRipple
+      [matRippleColor]="'9BB1FF'"
+      [matRippleCentered]="true"
+      [matRippleRadius]="700"
+      class="nav-link"
+    
+      routerLink="{{link.href}}"
+      >{{ link.name }}
+    </a>
+  </div>
+</div>
