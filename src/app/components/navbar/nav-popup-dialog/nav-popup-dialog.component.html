@@ -1,5 +1,19 @@
 <div class="navbar-nav">
+  <button
+  (click)="closeDialog()"
+    mat-icon-button
+    class="navbar-toggler hidden-sm-up"
+    type="button"
+   
+    aria-controls="collapsingNavbar2"
+
+    aria-label="Toggle navigation"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+
   <div class="d-flex flex-column">
+    
     <a
       (click) = "closeDialog()" 
       *ngFor="let link of links"
@@ -12,5 +26,14 @@
       routerLink="{{link.href}}"
       >{{ link.name }}
     </a>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div  *ngFor="let link of socialLinks"  class="col-">
+          <i class="fab fa-{{link.name}} fa-3.5x"></i>
+        </div>
+       
+      </div>
+    </div>
+
   </div>
 </div>

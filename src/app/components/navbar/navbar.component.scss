@@ -1,11 +1,46 @@
-
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .navbar {
-  height: 100px;
-  background-color: $black;
+  height: 120px;
+  background-color: $white;
   min-width: 100vw;
   position: sticky;
+  @include mobile {
+    height: 100px !important;
+  }
+
+  @include tablets {
+    height: 140px !important;
+  }
+
+  @include very-small-screens {
+    width: 200px !important;
+  }
+}
+button, .mat-icon {
+position: relative;
+float: right;
+}
+button {
+  display: flex;
+  justify-content: center;
+  color: blue;
+
+ 
+  border-radius: 50%;
+
+ 
+  
+  
+
+
+
+}
+.mat-icon {
+  transform: scale(1.7);
+
+  position: relative;
+  top: 6px;
 }
 .col {
   margin-left: 0;
@@ -17,28 +52,21 @@
 
 .nav-link {
   font-size: 19px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
-.nav-link {
-  float: right;
-}
-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-}
+
 
 .navbar-nav a:hover {
   transform: scale(1.1);
+  color: $active-link-color;
 }
 
 /* Underline From Center */
 .navbar-nav a {
-  color: whitesmoke;
-  font-family: 'Hammersmith One', sans-serif;
-  margin: 12px;
-  font-size: 27px;
+  color: $link-color;
+  font-family: "Google Sans", Fallback, sans-serif;
+  margin-left: 18px;
+  font-size: 20px;
   transition: all 0.2s ease-in-out;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -56,7 +84,7 @@ button {
   height: 1.5px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: grey;
   transition: width 0.15s ease 0s, left 0.15s ease 0s;
 
   width: 0;
@@ -72,31 +100,31 @@ button {
 
 .active-link {
   transform: scale(1.1) !important;
+  color: $active-link-color !important;
 }
 
-img {
-  width: 210px;
-  margin-left: 20px;
-  padding: 15px;
-}
 
-button {
-  z-index: 1000;
 
-  margin-right: 10px;
-  color: white;
-}
-
-.mat-icon {
-  font-size: 50px;
-  z-index: 1000;
-  margin-right: 25px;
-  position: relative;
-}
 .nav-link {
   vertical-align: auto;
 }
+img {
+  width: 35vw;
 
+
+  
+  @include mobile {
+    width: 280px !important;
+  }
+
+  @include tablets {
+    width: 300px !important;
+  }
+
+  @include very-small-screens {
+    width: 200px !important;
+  }
+}
 
 .social-icons {
   color: white;
@@ -105,11 +133,10 @@ button {
   font-size: 60px;
   text-align: center;
 }
-.mat-ripple-element {
-  display: none;
-}
+
+
 @media (max-width: 993px) {
-  .nav-link {
+  .col {
     display: none;
   }
 }

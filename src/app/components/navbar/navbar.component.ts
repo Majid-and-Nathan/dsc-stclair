@@ -13,16 +13,25 @@ import { Link } from 'src/app/types';
 export class NavbarComponent implements OnInit {
   isCollapsed: boolean;
   links: Link[];
+  socialLinks: Link[];
 
   constructor(public dialog: NgDialogAnimationService, public router: Router) {}
 
   ngOnInit(): void {
     this.isCollapsed = false;
     this.links = [
-      { name: 'HOME', href: '/' },
-      { name: 'FEATURES', href: '#' },
-      { name: 'ABOUT', href: '#' },
-      { name: 'CONTACT', href: '/contact-us' },
+      { name: 'Home', href: '/' },
+      { name: 'Team', href: '#' },
+      { name: 'About', href: '#' },
+      { name: 'Technologies', href: '#' },
+      { name: 'Contact', href: '/contact-us' },
+    ];
+    this.socialLinks = [
+      { name: 'facebook', href: '/' },
+      { name: 'Team', href: '/' },
+      { name: 'About', href: '#' },
+      { name: 'Technologies', href: '#' },
+
     ];
   }
   openDialog() {
@@ -36,8 +45,8 @@ export class NavbarComponent implements OnInit {
           keyframeAnimationOptions: { duration: 200 },
         },
       },
-      width: '60vw',
-      maxWidth: '60vw',
+      width: '100vw',
+      maxWidth: '100vw',
       height: '100vh',
       closeOnNavigation: true,
 

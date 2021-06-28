@@ -27,6 +27,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDivider, MatDividerModule } from '@angular/material/divider';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import {
   MatRippleModule,
   MAT_RIPPLE_GLOBAL_OPTIONS,
@@ -36,6 +38,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AgmCoreModule } from '@agm/core'
 
 import { globalRippleConfig } from './config/config';
+
 
 @NgModule({
   declarations: [
@@ -64,6 +67,7 @@ import { globalRippleConfig } from './config/config';
     MatFormFieldModule,
     MatInputModule,
     CommonModule,
+    FontAwesomeModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB_IqP4L2d8rSIkgt1M0ak0BIh3ZlTAADo',
     }),

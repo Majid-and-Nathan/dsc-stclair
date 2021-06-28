@@ -12,6 +12,8 @@
 $white: #ffffff;
 $dark-blue: #3d5a80;
 $black: #000000;
+$link-color: #485562;
+$active-link-color: #283b50;
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -48,6 +50,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+ 
 }
 
 .dialog-container-custom .mat-dialog-container {
@@ -81,4 +84,9 @@ body {
   @media (min-width: 1025px) {
     @content;
   }
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../src/assets/fonts/ProductSans-Black.ttf'); 
 }
