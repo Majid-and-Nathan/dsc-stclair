@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from 'src/app/types';
 import { ContactUsContent } from 'src/app/types/contact-content';
 
 @Component({
@@ -8,16 +9,24 @@ import { ContactUsContent } from 'src/app/types/contact-content';
 })
 export class ContactUsComponent implements OnInit {
   content: ContactUsContent;
+  socialLinks: Link[];
   constructor() {}
 
   ngOnInit(): void {
+    this.socialLinks = [
+      { name: 'facebook', href: '/' },
+      { name: 'discord', href: '/' },
+      { name: 'instagram', href: '#' },
+      { name: 'linkedin', href: '#' },
+
+    ];
     this.content = {
       title: 'Contact Us',
       description:
         'Itaque suscipit dolorem libero ipsum harum? Dignissimos dolor soluta nemo',
       mapTitle: 'My first AGM project',
-      lat: 51.678418,
-      long: 7.809007,
+      lat: 42.2485,
+      long: -83.0203,
       companyEmail: 'hello@hotmail.com',
       companyPhoneNumber: '(519)-214-143',
       cityAndProvince: 'Windsor, ON',

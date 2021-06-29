@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 .navbar {
-  height: 120px;
+  height: 105px;
   background-color: $white;
   min-width: 100vw;
   position: sticky;
@@ -10,22 +10,25 @@
   }
 
   @include tablets {
-    height: 140px !important;
+    height: 100px !important;
   }
 
   @include very-small-screens {
     width: 200px !important;
   }
 }
-button, .mat-icon {
-position: relative;
-float: right;
+.mat-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
 }
+
 button {
   display: flex;
   justify-content: center;
-  color: blue;
 
+  
  
   border-radius: 50%;
 
@@ -57,35 +60,35 @@ button {
 
 
 .navbar-nav a:hover {
-  transform: scale(1.1);
-  color: $active-link-color;
+  transform: scale(1.15);
+
 }
 
 /* Underline From Center */
 .navbar-nav a {
-  color: $link-color;
   font-family: "Google Sans", Fallback, sans-serif;
-  margin-left: 18px;
+  margin-left: 29px;
+ 
   font-size: 20px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
+
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
 }
+
 .navbar-nav a::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: block;
   height: 1.5px;
   left: 50%;
   position: absolute;
-  background: grey;
-  transition: width 0.15s ease 0s, left 0.15s ease 0s;
+  background: rgb(245, 240, 240);
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
 
   width: 0;
 }
@@ -99,8 +102,8 @@ button {
 }
 
 .active-link {
-  transform: scale(1.1) !important;
-  color: $active-link-color !important;
+  transform: scale(1.15) !important;
+
 }
 
 
@@ -139,4 +142,11 @@ img {
   .col {
     display: none;
   }
+
+}
+@media (max-width: 363px) {
+  img {
+    width: 220px !important;
+  }
+
 }

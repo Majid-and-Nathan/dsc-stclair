@@ -13,11 +13,11 @@ export class NavPopupDialogComponent implements OnInit {
   socialLinks: Link[];
   ngOnInit(): void {
     this.links = [
-      { name: 'Home', href: '/' },
-      { name: 'Team', href: '/' },
-      { name: 'About', href: '#' },
-      { name: 'Technologies', href: '#' },
-      { name: 'Contact', href: '/contact-us' },
+      { name: 'Home', href: '/', color: "#4285F4" },
+      { name: 'Team', href: '#', color: "#DB4437" },
+      { name: 'About', href: '#', color: "#F4B400" },
+      { name: 'Technologies', href: '#', color: "#0F9D58" },
+      { name: 'Contact', href: '/contact-us', color: "#4285F4" },
     ];
     this.socialLinks = [
       { name: 'facebook', href: '/' },

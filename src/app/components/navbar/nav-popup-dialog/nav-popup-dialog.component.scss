@@ -33,7 +33,14 @@ button {
   bottom: 10px;
 }
 i {
-  padding: 15px;
+  padding: 20px;
+  font-size: 6vh;
+}
+@media (max-width: 363px) {
+  i {
+    padding: 20px;
+    font-size: 5vh;
+  }
 }
 
 .nav-link {

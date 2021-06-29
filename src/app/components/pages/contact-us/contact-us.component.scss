@@ -1,22 +1,22 @@
 @import "../../../../styles.scss";
 
 .intro-box {
-  background-color: #405c84;
+  background-color: white;
   margin: auto;
   justify-content: center;
   align-items: center;
 }
 h1 {
   text-align: center;
-  font-family: "Hammersmith One", sans-serif;
-  color: white;
+  font-family: "Google Sans", Fallback, sans-serif;
+  color: $header-colors;
   font-size: 6vh;
   line-height: 70px;
 }
 h2 {
   text-align: center;
-  font-family: "Hammersmith One", sans-serif;
-  color: black;
+  font-family: "Google Sans", Fallback, sans-serif;
+  color: $header-colors;
   font-size: 3vh;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -26,17 +26,17 @@ h2 {
 h3 {
 
   text-align: center;
-  font-family: "Hammersmith One", sans-serif;
-  color: black;
+  font-family: "Google Sans", Fallback, sans-serif;
+  color: $header-colors;
   font-size: 1.5vh;
 
 }
 p {
   text-align: center;
-  font-family: "Hammersmith One", sans-serif;
-  color: white;
+  font-family: "Google Sans", Fallback, sans-serif;
+  color: $link-color;
   line-height: 45px;
-  font-size: 3vh;
+  font-size: 2.5vh;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
@@ -76,5 +76,25 @@ agm-map {
  }
 .col-lg-3,
 .col-lg-8 {
+  padding: 0;
+}
+i {
+  padding: 5px;
+  font-size: 90px;
+  @include mobile {
+    font-size: 40px !important;
+    padding: 1px !important;
+  }
+
+  @include tablets {
+    font-size: 70px !important;
+  }
+
+  @include very-small-screens {
+    font-size: 90px !important;
+  }
+
+}
+.social-icon-col {
   padding: 0;
 }
