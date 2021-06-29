@@ -1,16 +1,77 @@
-.container{
+@import "../../../../styles.scss";
+
+.container-fluid{
     display: flex;
-    width: 100%;
-    height: 100%;
     justify-content: center;
+}
+
+.content-container{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-self: center;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.green{
+    color: $green !important;
+}
+
+.red{
+    color: $red !important;
+}
+
+.blue{
+    color: $blue !important;
+}
+
+.yellow{
+    color: $yellow !important;
+}
+
+.hero{
+    margin-top: 100px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
+.hero-content{
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-image > img{
+}
+
+.hero-title > h2{
+    color: #1B2733;
+}
+
+.hero-blurb{
+    margin-top: 40px;
+}
+
+.hero-blurb > p{
+    line-height: 29px;
+    text-align: left;
+    color: #637282;
+    font-size: 1rem;
 }
 
 .card-list{
     margin-top: 50px;
     display: flex;
     width: 100%;
-}
-
-.card-list-item{
-    margin: 10px;
+    flex-direction: row;
+    align-self: center;
+    column-gap: 20px;
 }

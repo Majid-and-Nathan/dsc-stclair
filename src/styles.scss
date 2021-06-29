@@ -21,6 +21,21 @@ $green: #0F9D58;
 $yellow: #F4B400;
 $blue: #4285F4;
 
+.green{
+  color: $green !important;
+}
+
+.red{
+  color: $red !important;
+}
+
+.blue{
+  color: $blue !important;
+}
+
+.yellow{
+  color: $yellow !important;
+}
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -58,7 +73,6 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Google Sans", Fallback, sans-serif;
- 
 }
 
 .dialog-container-custom .mat-dialog-container {

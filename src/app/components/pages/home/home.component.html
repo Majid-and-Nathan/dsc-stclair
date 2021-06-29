@@ -1,8 +1,24 @@
 <!-- <app-carousel></app-carousel> -->
-<div class="container">
-    <div class="card-list" *ngFor="let card of cards">
-        <app-card class="card-list-item" title="{{card.title}}" description="{{card.description}}" icon="{{card.icon}}"
-            colour="{{card.colour}}">
-        </app-card>
+<div class="container-fluid">
+    <div class="content-container">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-title">
+                    <h2>Developer Student Club</h2>
+                    <h2 class="green">St. Clair College.</h2>
+                </div>
+                <div class="hero-blurb">
+                    <p>Google Developer Student Clubs are university based community groups for students interested in <span class="blue">Google developer technologies</span>. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome.</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../../../../assets/images/DSC St. Clair College Light Vertical-Logo.png"/>
+            </div>
+        </div>
+        <div class="card-list">
+            <app-card *ngFor="let card of cards" class="card-list-item" title="{{card.title}}" description="{{card.description}}" icon="{{card.icon}}"
+                colour="{{card.colour}}">
+            </app-card>
+        </div>
     </div>
 </div>
