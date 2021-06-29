@@ -1,17 +1,32 @@
 @import "../../../styles.scss";
 
 .navbar {
-  height: 135px;
+  height: 68px;
   background-color: $white;
   min-width: 100vw;
   position: sticky;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   @include mobile {
-    height: 100px !important;
+    height: 50px !important;
   }
 
   @include tablets {
-    height: 100px !important;
+    height: 60px !important;
+  }
+
+  @include very-small-screens {
+    width: 50px !important;
+  }
+}
+img {
+  width: 250px;
+
+  @include mobile {
+    width: 220px !important;
+  }
+
+  @include tablets {
+    width: 250px !important;
   }
 
   @include very-small-screens {
@@ -34,7 +49,7 @@ button {
   transform: scale(1.7);
 
   position: relative;
-  top: 6px;
+  bottom: 5px;
 }
 .col {
   margin-left: 0;
@@ -97,21 +112,7 @@ button {
   vertical-align: auto;
 }
 
-img {
-  width: 530px;
 
-  @include mobile {
-    width: 280px !important;
-  }
-
-  @include tablets {
-    width: 300px !important;
-  }
-
-  @include very-small-screens {
-    width: 200px !important;
-  }
-}
 
 .social-icons {
   color: white;
