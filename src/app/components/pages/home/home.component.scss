@@ -139,6 +139,11 @@
   
   img {
       animation: pulse 1.6s;
+      animation-name: imgAnimation;
+  }
+  @keyframes imgAnimation {
+    from { transform: scale(0)  }
+    to { transform: scale(1) }
   }
   @keyframes bigSquare {
     from { transform: translate(160%, 53%) rotate(-70deg) scale(0); }
@@ -156,18 +161,8 @@
 
     
   }
-  @keyframes triangle {
 
-    from { transform:  scale(0) ; }
-    to { transform: scale(1); }
-  }
-  .hoop {
-    animation-name: hoop; 
-  }
-  @keyframes hoop {
-    from { transform: translate(-160%, -33%) scale(0) ; }
-    to { transform: translate(0%, 0%) scale(1); }
-  }
+
   .bigCircle {
     animation-name: bigCircle;
   }
@@ -179,7 +174,7 @@
     animation-name: littleCircle;
   }
   @keyframes littleCircle {
-    from { transform: scale(0) }
+    from { transform: scale(0) translate(26%, 343%);  }
     to { transform: scale(1) }
   }
   @keyframes float {
