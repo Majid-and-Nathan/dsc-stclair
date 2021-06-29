@@ -24,12 +24,10 @@ h2 {
   width: fit-content;
 }
 h3 {
-
   text-align: center;
   font-family: "Google Sans", Fallback, sans-serif;
   color: $header-colors;
   font-size: 1.5vh;
-
 }
 p {
   text-align: center;
@@ -70,10 +68,10 @@ agm-map {
 .col-lg-4 {
   padding: 30px;
 }
-.row{ 
+.row {
   padding: 0;
   margin: 0;
- }
+}
 .col-lg-3,
 .col-lg-8 {
   padding: 0;
@@ -93,8 +91,13 @@ i {
   @include very-small-screens {
     font-size: 90px !important;
   }
-
 }
 .social-icon-col {
   padding: 0;
+}
+agm-map {
+  box-shadow: 0 0 15px rgb(99 114 130 / 30%);
+}
+.container-fluid {
+  padding-top: 7px;
 }
