@@ -11,9 +11,21 @@
                     <p>Google Developer Student Clubs are university based community groups for students interested in <span class="blue">Google developer technologies</span>. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome.</p>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="../../../../assets/images/DSC St. Clair College Light Vertical-Logo.png"/>
-            </div>
+            <div class="Header">
+               
+                <svg class="Header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1337.97 664.43">
+                    <path class="Header__shape bigSquare" fill="none"  stroke="#DB4437" stroke-width="8" d="M336.519 109.271l86.383-56.098 56.097 86.383-86.383 56.098z"/>
+                    <path class="Header__shape triangle"    fill="none" stroke="#0F9D58" stroke-width="8" d="M394.55 489.17L321 454.54l-1.98 46.16z"/>
+                    <circle class="Header__shape bigCircle" fill="none"  stroke="#F4B400" stroke-width="13" cx="976.52" cy="262.17" r="59"/>
+                    <path class="Header__shape littleSquare" fill="#4285F4" d="M335.923 342.61l12.372-53.59 53.59 12.372-12.372 53.59z"/>
+                    <circle class="Header__shape hoop" fill="#DB4437" cx="905.52" cy="500.17" r="35"/>
+                    <circle class="Header__shape littleCircle" fill="#4285F4"cx="786.52" cy="103.17" r="27"/>
+                  </svg>
+                <div class="hero-image">
+                    <img src="../../../../assets/images/DSC St. Clair College Light Vertical-Logo.png"/>
+                </div>
+              </div>
+           
         </div>
         <div class="card-list">
             <app-card *ngFor="let card of cards" class="card-list-item" title="{{card.title}}" description="{{card.description}}" icon="{{card.icon}}"
