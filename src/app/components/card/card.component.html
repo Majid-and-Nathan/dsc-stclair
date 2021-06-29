@@ -1,18 +1,7 @@
-<mat-card class="container">
-    <mat-card-header class="header">
-        <img *ngIf="avatarImage" mat-card-avatar class="avatar-image" [src]="avatarImage" />
-        <mat-card-title>{{title}}</mat-card-title>
-        <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-        <div class="card-image-container" *ngIf="cardImage">
-            <img mat-card-image class="card-image" [src]="cardImage" />
-        </div>
-        <p>
-            {{description}}
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <button mat-button>DO SOMETHING</button>
-    </mat-card-actions>
-</mat-card>
+<div class="feature-card">
+    <div class="feature-card__body">
+        <i [class]="'fas ghost-icon ' + icon" [style]="'-webkit-text-stroke: 2px #' + colour + ';'"></i>
+        <h4 class="feature-title">{{title}}</h4>
+        <p>{{description}}</p>
+    </div>
+</div>

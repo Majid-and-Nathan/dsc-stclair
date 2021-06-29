@@ -1,1 +1,8 @@
-<app-carousel></app-carousel>
+<!-- <app-carousel></app-carousel> -->
+<div class="container">
+    <div class="card-list" *ngFor="let card of cards">
+        <app-card class="card-list-item" title="{{card.title}}" description="{{card.description}}" icon="{{card.icon}}"
+            colour="{{card.colour}}">
+        </app-card>
+    </div>
+</div>
