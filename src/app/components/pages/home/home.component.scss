@@ -1,202 +1,257 @@
 @import "../../../../styles.scss";
 
-.container-fluid{
-    display: flex;
-    justify-content: center;
+.container-fluid {
+  display: flex;
+  justify-content: center;
 }
 
-.content-container{
-    display: flex;
-    width: 70%;
-    height: 100%;
-    align-self: center;
-    flex-direction: column;
-    justify-self: center;
+.content-container {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  align-self: center;
+  flex-direction: column;
+  justify-self: center;
 }
 
-.green{
-    color: $green !important;
+.green {
+  color: $green !important;
 }
 
-.red{
-    color: $red !important;
+.red {
+  color: $red !important;
 }
 
-.blue{
-    color: $blue !important;
+.blue {
+  color: $blue !important;
 }
 
-.yellow{
-    color: $yellow !important;
+.yellow {
+  color: $yellow !important;
 }
 
-.hero{
-    margin-top: 100px;
-    align-items: center;
-    display: grid;
-    justify-content: center;
-    flex-direction: column;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
+.hero {
+  margin-top: 100px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
 }
 
-.hero-content{
+.hero-content {
 }
 
-.hero-image{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+.hero-image {
+}
+.logo-image {
+  width: 200px;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
+  
+  animation: logoAnimation 2.4s;
+  transition-delay: 2s;
+}
+.text-image {
+  animation-fill-mode: forwards;
+  width: 350px;
+  animation: pulse 15s;
+  
 }
 
-.hero-image > img{
+.hero-title > h2 {
+  color: #1b2733;
 }
 
-.hero-title > h2{
-    color: #1B2733;
+.hero-blurb {
+  margin-top: 40px;
+  font-family: "Google Sans" !important;
 }
 
-.hero-blurb{
-    margin-top: 40px;
-    font-family: "Google Sans" !important;
+.hero-blurb > p {
+  line-height: 29px;
+  text-align: left;
+  color: #637282;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
-.hero-blurb > p{
-    line-height: 29px;
-    text-align: left;
-    color: #637282;
-    font-size: 1rem;
-    font-weight: normal;
+.card-list {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-self: center;
+  column-gap: 20px;
 }
-
-.card-list{
-    margin-top: 50px;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-self: center;
-    column-gap: 20px;
-}
- // I was rotating an SVG shape within a larger SVG when I noticed that the shape was taking the center of the SVG viewbox as the origin of the transformation rather than its own center. To fix this add transform-box: fill-box to the shape you're rotating.
+// I was rotating an SVG shape within a larger SVG when I noticed that the shape was taking the center of the SVG viewbox as the origin of the transformation rather than its own center. To fix this add transform-box: fill-box to the shape you're rotating.
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box
 
 .Header__shape {
-    animation-duration: 4s;
-    animation-timing-function: cubic-bezier(.18,1.17,.03,1.46);
-    animation-fill-mode: backwards;
-    transform-origin: center;
-    // this here is the good stuff
-    transform-box: fill-box;
-  }
-  
-  
-  // aaand the rest of the code
-  
-  body {
-    background: radial-gradient(#c2c2c2 8%, transparent 8%), white;
-    background-position: 0 0, 25px 25px;
-    background-size:25px 25px;
-    min-height: 100vh;
-  }
-  
-  .Header {
-    position: relative;
- 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .Header__svg {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    will-change: transform;
-  }
-  .Header__title {
-    font-family: Avenir, Futura, 'Open Sans', 'Gill Sans', 'Helvetica Neue', Ariel, sans-serif;
-    font-weight: bold;
-    font-size: 6vw;
-    margin: 0;
-  }
-  
-  .bigSquare {
-    animation-name: bigSquare;
-  }
-  @keyframes pulse {
-    from {
-        
-     opacity: 0;
-    }
-   to {   
-    opacity: 1;
-    }
-  }
- 
-  
-  img {
-      animation: pulse 1.6s;
-      animation-name: imgAnimation;
-  }
-  @keyframes imgAnimation {
-    from { transform: scale(0)  }
-    to { transform: scale(1) }
-  }
-  @keyframes bigSquare {
-    from { transform: translate(160%, 53%) rotate(-70deg) scale(0); }
-    to { transform: translateY(1) rotate(0deg) scale(0.7); }
-  }
-  .littleSquare {
-    animation-name: littleSquare;
-  }
-  @keyframes littleSquare {
-    from { transform: translate(226%, 183%) rotate(140deg) scale(0) ; }
-    to { transform: translate(0%, 0%) rotate(0deg) scale(1); }
-  }
-  .triangle {
-    animation-name: triangle;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.18, 1.17, 0.03, 1.46);
+  animation-fill-mode: backwards;
+  transform-origin: center;
+  // this here is the good stuff
+  transform-box: fill-box;
+}
 
-    
-  }
+// aaand the rest of the code
 
+body {
+  background: radial-gradient(#c2c2c2 8%, transparent 8%), white;
+  background-position: 0 0, 25px 25px;
+  background-size: 25px 25px;
+  min-height: 100vh;
+}
 
-  .bigCircle {
-    animation-name: bigCircle;
+.Header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header__svg {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  will-change: transform;
+}
+.Header__title {
+  font-family: Avenir, Futura, "Open Sans", "Gill Sans", "Helvetica Neue", Ariel,
+    sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  margin: 0;
+}
+
+.bigSquare {
+  animation-name: bigSquare;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0
   }
-  @keyframes bigCircle {
-    from { transform: scale(0) translate(60%, 3%); }
-    to { transform: scale(1) translate(0%, 0%); }
+  10% {
+    opacity: 0
   }
-  .littleCircle {
-    animation-name: littleCircle;
+  20% {
+    opacity: 1
   }
-  @keyframes littleCircle {
-    from { transform: scale(0) translate(26%, 343%);  }
-    to { transform: scale(1) }
+  30% {
+    opacity: 1
   }
-  @keyframes float {
-    0% {
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translatey(0px);
-    }
-    50% {
-      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-      transform: translatey(-20px);
-    }
-    100% {
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translatey(0px);
-    }
+  40% {
+    opacity: 1
   }
+  50% {
+    opacity: 1
+  }
+  60% {
+    opacity: 1
+  }
+  70% {
+    opacity: 1
+  }
+  80% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@keyframes logoAnimation {
+  
+  from {
+    transform: translate(0, 80%) rotate(-270deg) scale(0);
+  }
+  to {
+    transform: translateY(1) rotate(0deg) scale(1);
+  }
+}
 
   
-  // some lovely sass fun to stagger the animation
-  
-  @for $i from 1 to 12 {
-    .Header__shape:nth-child(#{$i}) { 
-      animation-delay: $i * 0.16s;
-    }
+
+@keyframes imgAnimation {
+  from {
+    transform: scale(0);
   }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes bigSquare {
+  from {
+    transform: translate(160%, 53%) rotate(-70deg) scale(0);
+  }
+  to {
+    transform: translateY(1) rotate(0deg) scale(0.7);
+  }
+}
+.littleSquare {
+  animation-name: littleSquare;
+}
+@keyframes littleSquare {
+  from {
+    transform: translate(226%, 183%) rotate(140deg) scale(0);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+}
+.triangle {
+  animation-name: triangle;
+}
+
+.bigCircle {
+  animation-name: bigCircle;
+}
+@keyframes bigCircle {
+  from {
+    transform: scale(0) translate(60%, 3%);
+  }
+  to {
+    transform: scale(1) translate(0%, 0%);
+  }
+}
+.littleCircle {
+  animation-name: littleCircle;
+}
+@keyframes littleCircle {
+  from {
+    transform: scale(0) translate(26%, 343%);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+// some lovely sass fun to stagger the animation
+
+@for $i from 1 to 12 {
+  .Header__shape:nth-child(#{$i}) {
+    animation-delay: $i * 0.2s;
+  }
+}
