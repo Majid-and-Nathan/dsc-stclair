@@ -1,41 +1,19 @@
+<div class="container-fluid intro-box d-flex flex-column p-4">
+  <h1>Want to get involved?</h1>
 
-<div class="container-fluid intro-box row">
-  <div class="col-lg-3"></div>
+  <p class="p-3">{{ content.description }}</p>
 
-  <div class="col-lg-6"> <h1>Want to get involved?</h1></div>
+  <button class="blue p-3"><span class="button-text">Send an email</span></button>
 
-  <div class="col-lg-3"> </div>
+  <p class="p-3">Check us out on...</p>
 
-  
  
-  <div class="w-100 p-3"></div>
-  <div class="col-lg-3"></div>
-  <div class="col-lg-6"><p>{{ content.description }}</p></div>
-  <div class="col-lg-3"></div>
-  <div class="w-100 p-3"></div>
-  <div class="col-lg-4"></div>
-  <div class="col-lg-4"><button class="blue"><span class="button-text">Send an email</span> </button></div>
-  <div class="col-lg-4"></div>
-  <div class="w-100 p-3"></div>
-  <div class="col-lg-3"></div>
-  <div class="col-lg-6"><p>Check us out on...</p></div>
-  <div class="col-lg-3"></div>
-  <div class="w-100"></div>
-
-  <div class="col-lg-3"></div>
-  <div class="col-lg-6 row buttons">
-    <div *ngFor="let item of icons" class="p-3 buttons"> 
-
-
-    <app-social-icon  colour="{{item.colour}}" icon = "{{item.icon}}"></app-social-icon>
-   
+</div>
+<div class="p-3 buttons row">
+  <div *ngFor="let item of icons" class="col p-3">
+    <app-social-icon
+      colour="{{ item.colour }}"
+      icon="{{ item.icon }}"
+    ></app-social-icon>
   </div>
-  </div>
-  <div class="col-lg-3"></div>
-  <div class="w-100 p-5"><mat-divider></mat-divider></div>
-
-  
- 
-
-
 </div>
