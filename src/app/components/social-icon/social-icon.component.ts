@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SocialIconComponent implements OnInit {
   @Input() icon: string;
   @Input() colour: string;
+  @Input() type: string;
 
   constructor() { }
 

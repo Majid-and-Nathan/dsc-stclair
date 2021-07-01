@@ -78,25 +78,30 @@ export class ContactUsComponent implements OnInit {
     this.icons.push({
       icon: "fab fa-discord",
       colour: "#7289DA",
+      type: "discord"
     });
     this.icons.push({
       icon: "fab fa-facebook",
       colour: "#1778F2",
+      type: "facebook"
     })
 
     this.icons.push({
       icon: "fab fa-github",
       colour: "d66ba0",
+      type: "github"
     })
 
     this.icons.push({
       icon: "fab fa-linkedin",
       colour: "#0077B5",
+      type: "linkedin"
     })
 
     this.icons.push({
       icon: "fab fa-instagram",
       colour: "#f09433",
+      type: "instagram"
     })
 
 
