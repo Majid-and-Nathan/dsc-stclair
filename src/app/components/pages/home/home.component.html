@@ -32,23 +32,8 @@
                 </div>
             </div>
         </div>
-        <div class="about-container">
-            <div class="card-list">
-                <app-card *ngFor="let card of aboutCards" class="card-list-item" [card]="card">
-                </app-card>
-            </div>
-        </div>
-        <div class="technologies-container">
-            <div class="subtitle">
-                <h4>Check out what technologies we are using!</h4>
-            </div>
-            <div class="card-list">
-                <app-card *ngFor="let card of technologiesCards" class="card-list-item" [card]="card">
-                </app-card>
-            </div>
-        </div>
-        <!-- <app-contact-us></app-contact-us> -->
-        <!-- <app-technologies></app-technologies> -->
+        <app-about></app-about>
+        <app-technologies></app-technologies>
+        <app-contact-us></app-contact-us>
     </div>
 </div>
-<app-contact-us></app-contact-us>

@@ -10,7 +10,6 @@ import { CardComponent } from './components/card/card.component';
 import { NavPopupDialogComponent } from './components/navbar/nav-popup-dialog/nav-popup-dialog.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactUsComponent } from './components/pages/contact-us/contact-us.component';
 
 import {
@@ -41,6 +40,7 @@ import { globalRippleConfig } from './config/config';
 import { ListCardComponent } from './components/list-card/list-card.component';
 import { TechnologiesComponent } from './components/pages/technologies/technologies.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -50,12 +50,12 @@ import { SocialIconComponent } from './components/social-icon/social-icon.compon
     CardComponent,
     NavPopupDialogComponent,
     ButtonComponent,
-    CarouselComponent,
     HomeComponent,
     ContactUsComponent,
     ListCardComponent,
     TechnologiesComponent,
-    SocialIconComponent
+    SocialIconComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

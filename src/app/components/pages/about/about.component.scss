@@ -1,6 +1,6 @@
 @import "../../../../styles.scss";
 
-.technologies-container {
+.about-container {
     margin-top: 50px;
 }
 
@@ -16,21 +16,21 @@
     flex-direction: row;
     align-self: center;
     column-gap: 20px;
-  
+
     @include small-screens {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     @include very-small-screens {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     @include tablets {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     @include mobile {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
-  }
+}

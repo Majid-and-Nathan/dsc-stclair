@@ -1,3 +1,9 @@
-<div class="container">
-
+<div class="technologies-container">
+    <div class="subtitle">
+        <h4>Check out what technologies we are using!</h4>
+    </div>
+    <div class="card-list">
+        <app-card *ngFor="let card of technologiesCards" class="card-list-item" [card]="card">
+        </app-card>
+    </div>
 </div>
