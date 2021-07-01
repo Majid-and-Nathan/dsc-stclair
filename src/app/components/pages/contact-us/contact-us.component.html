@@ -1,58 +1,20 @@
-<div class="container-fluid">
+<div class="container-fluid intro-box d-flex flex-column p-4">
+  <h1>Want to get involved?</h1>
 
+  <p class="p-4">{{ content.description }}</p>
+
+  <button class="blue p-3">
+    <span class="button-text">Send an email</span>
+  </button>
+
+  <p class="p-4">Check us out on...</p>
 </div>
-<div class="container-fluid intro-box row p-5">
- 
-  <div class="col-lg-2"></div>
-  <div class="col-lg-8 "> <h1>{{ content.title }}</h1></div>
-  
- 
-  <div class="w-100 p-3"></div>
-  <div class="col-lg-2"></div>
-  <div class="col-lg-5"><p>{{ content.description }}</p></div>
-  <div class="w-100 p-2"></div>
-  <div class="col-lg-2"></div>
-  <div class="col-lg-8 p-4"><button class="blue"><span class="button-text">Email</span> </button></div>
-  <div class="w-100 p-4"></div>
-  <div class="col-lg-2"></div>
-
-  <div class="col-lg-2 " >
-    <app-list-card title="{{cards[0].title}}" [listItems]= "cards[0].listItems" icon="{{cards[0].icon}}" colour = "{{cards[0].colour}}"></app-list-card>
-
-  </div>
-
-  <div class="col-lg-2">
-    
-  </div>
-  <div class="col-lg-2" >
-    <app-list-card title="{{cards[1].title}}" [listItems]= "cards[1].listItems" icon="{{cards[1].icon}}" colour = "{{cards[1].colour}}"></app-list-card>
-
-  </div>
-  
-  
- 
-</div>
-<div class="container-fluid form-holder">
-  <div class="row justify-content-spacebetween">
-    <div class="row">
-
-      <div class="col p-3">
-      
-      </div>
-      <div class="col p-3">
-      
-      </div>
-      
-  
-      <div class="w-100 p-4"></div>
-  
-      <div class="col p-3"></div>
-    
-      <div class="col p-3"></div>
-    
-    </div>
-
-
-
+<div class="p-1 buttons row justify-content-center">
+  <div *ngFor="let item of icons" class="col-lg- p-2 social-button">
+    <app-social-icon
+      colour="{{ item.colour }}"
+      icon="{{ item.icon }}"
+      type="{{item.type}}"
+    ></app-social-icon>
   </div>
 </div>

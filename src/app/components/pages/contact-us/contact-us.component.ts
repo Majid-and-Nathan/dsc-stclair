@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { ShareService } from 'ngx-sharebuttons';
+import { of } from 'rxjs';
+
 import { Card, Link } from 'src/app/types';
 import { ContactUsContent } from 'src/app/types/contact-content';
+import { Icon } from 'src/app/types/icon';
 import { ListCard } from 'src/app/types/list-card';
+
+
 
 @Component({
   selector: 'app-contact-us',
@@ -11,9 +17,13 @@ import { ListCard } from 'src/app/types/list-card';
 export class ContactUsComponent implements OnInit {
   content: ContactUsContent;
   socialLinks: Link[];
+  icons: Icon[] = [];
   cards: ListCard[] = [];
   cardOneArray: string[] = [];
-  constructor() {}
+  constructor(private share: ShareService) {
+
+    
+  }
 
   ngOnInit(): void {
     this.socialLinks = [
@@ -42,8 +52,8 @@ export class ContactUsComponent implements OnInit {
       icon: "fa-search-location",
       colour: "4285F4",
       listItems: [
+        'St. Clair College',
         'Windsor, ON',
-        '555 Dougal Ave',
         'N0B 215'
         
       ]
@@ -65,20 +75,45 @@ export class ContactUsComponent implements OnInit {
       ]
     
     });
-    this.cards.push({
-      title: "Contact",
-      icon: "fa-network-wired",
-      colour: "F4B400",
-
-      listItems: [
-        'hello@hotmail.com',
-        '(519)-214-143',
-        'N0B 215'
-        
-      ]
-    
+    this.icons.push({
+      icon: "fab fa-discord",
+      colour: "#7289DA",
+      type: "discord"
     });
-   
+    this.icons.push({
+      icon: "fab fa-facebook",
+      colour: "#1778F2",
+      type: "facebook"
+    })
 
+    this.icons.push({
+      icon: "fab fa-github",
+      colour: "d66ba0",
+      type: "github"
+    })
+
+    this.icons.push({
+      icon: "fab fa-linkedin",
+      colour: "#0077B5",
+      type: "linkedin"
+    })
+
+    this.icons.push({
+      icon: "fab fa-instagram",
+      colour: "#f09433",
+      type: "instagram"
+    })
+
+
+    
+
+    
+    
+    
+  
   }
 }
+function tap(arg0: () => void): any {
+  throw new Error('Function not implemented.');
+}
+

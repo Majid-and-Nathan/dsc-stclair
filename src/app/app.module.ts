@@ -40,7 +40,7 @@ import { AgmCoreModule } from '@agm/core'
 import { globalRippleConfig } from './config/config';
 import { ListCardComponent } from './components/list-card/list-card.component';
 import { TechnologiesComponent } from './components/pages/technologies/technologies.component';
-
+import { SocialIconComponent } from './components/social-icon/social-icon.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +55,7 @@ import { TechnologiesComponent } from './components/pages/technologies/technolog
     ContactUsComponent,
     ListCardComponent,
     TechnologiesComponent,
+    SocialIconComponent
   ],
   imports: [
     BrowserModule,
