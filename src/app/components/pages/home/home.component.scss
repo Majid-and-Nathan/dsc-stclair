@@ -108,7 +108,7 @@
   }
 }
 
-.hero-title > h2 {
+.title > h2, h4 {
   color: #1b2733;
 }
 
@@ -325,4 +325,17 @@ body {
   .Header__shape:nth-child(#{$i}) {
     animation-delay: $i * 0.1s;
   }
+}
+
+.technologies-container{
+  margin-top: 50px;
+}
+
+.subtitle{
+  color: #1b2733;
+  text-align: center;
+}
+
+.about-container{
+  margin-top: 50px;
 }

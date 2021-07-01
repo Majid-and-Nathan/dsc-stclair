@@ -1,7 +1,8 @@
 <div class="feature-card">
     <div class="feature-card__body">
-        <i [class]="'fas ghost-icon ' + icon" [style]="'-webkit-text-stroke: 2px #' + colour + ';'"></i>
-        <h4 class="feature-title">{{title}}</h4>
-        <p>{{description}}</p>
+        <img *ngIf="card.cardType === CardType.TECHNOLOGIES" [src]="card.image" />
+        <i *ngIf="card.cardType === CardType.ABOUT" [class]="'ghost-icon ' + card.icon" [style]="'-webkit-text-stroke: 2px #' + card.colour + ';'"></i>
+        <h4 class="feature-title">{{card.title}}</h4>
+        <p>{{card.description}}</p>
     </div>
 </div>

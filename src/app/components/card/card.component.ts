@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Card } from 'src/app/types';
+import { CardType } from '../../enums';
 
 @Component({
   selector: 'app-card',
@@ -7,14 +9,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() description: string;
-  @Input() icon: string;
-  @Input() colour: string;
+  @Input() card: Card;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public get CardType(): typeof CardType {
+    return CardType;
   }
 
 }

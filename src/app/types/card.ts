@@ -1,6 +1,8 @@
 export type Card = {
     title: string;
     description: string;
-    icon: string;
-    colour: string;
+    cardType: number;
+    icon?: string;
+    colour?: string;
+    image?: string;
 }

@@ -3,14 +3,15 @@
     <div class="content-container">
         <div class="hero">
             <div class="hero-content">
-                <div class="hero-title">
+                <div class="title">
                     <h2>Developer Student Club</h2>
                     <h2 class="green">St. Clair College.</h2>
                 </div>
                 <div class="hero-blurb">
                     <p>Google Developer Student Clubs are university based community groups for students interested in
                         <span class="blue">Google developer technologies</span>. Students from all undergraduate or
-                        graduate programs with an interest in growing as a developer are welcome.</p>
+                        graduate programs with an interest in growing as a developer are welcome.
+                    </p>
                 </div>
             </div>
             <div class="Header">
@@ -31,10 +32,22 @@
                 </div>
             </div>
         </div>
-        <div class="card-list">
-            <app-card *ngFor="let card of cards" class="card-list-item" title="{{card.title}}"
-                description="{{card.description}}" icon="{{card.icon}}" colour="{{card.colour}}">
-            </app-card>
+        <div class="about-container">
+            <div class="card-list">
+                <app-card *ngFor="let card of aboutCards" class="card-list-item" [card]="card">
+                </app-card>
+            </div>
         </div>
+        <div class="technologies-container">
+            <div class="subtitle">
+                <h4>Check out what technologies we are using!</h4>
+            </div>
+            <div class="card-list">
+                <app-card *ngFor="let card of technologiesCards" class="card-list-item" [card]="card">
+                </app-card>
+            </div>
+        </div>
+        <!-- <app-contact-us></app-contact-us> -->
+        <!-- <app-technologies></app-technologies> -->
     </div>
 </div>
