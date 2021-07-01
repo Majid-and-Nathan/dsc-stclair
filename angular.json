@@ -34,7 +34,7 @@
               "src/assets"
             ],
             "styles": [
-              "dsc-stclair/node_modules/aos/dist/aos.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
             "scripts": []
