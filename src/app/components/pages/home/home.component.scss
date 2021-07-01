@@ -57,7 +57,7 @@
 .text-image {
   animation-fill-mode: forwards;
   width: 350px;
-  animation: pulse 15s;
+  animation: pulse 21s;
   
 }
 
@@ -139,8 +139,11 @@ body {
   0% {
     opacity: 0
   }
-  10% {
+  5% {
     opacity: 0
+  }
+  10% {
+    opacity: 1
   }
   20% {
     opacity: 1
@@ -166,6 +169,7 @@ body {
   100% {
     opacity: 1
   }
+  
 }
 @keyframes logoAnimation {
   
@@ -252,6 +256,6 @@ body {
 
 @for $i from 1 to 12 {
   .Header__shape:nth-child(#{$i}) {
-    animation-delay: $i * 0.2s;
+    animation-delay: $i * 0.1s;
   }
 }

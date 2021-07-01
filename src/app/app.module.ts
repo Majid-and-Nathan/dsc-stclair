@@ -38,6 +38,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AgmCoreModule } from '@agm/core'
 
 import { globalRippleConfig } from './config/config';
+import { ListCardComponent } from './components/list-card/list-card.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { globalRippleConfig } from './config/config';
     CarouselComponent,
     HomeComponent,
     ContactUsComponent,
+    ListCardComponent,
   ],
   imports: [
     BrowserModule,
