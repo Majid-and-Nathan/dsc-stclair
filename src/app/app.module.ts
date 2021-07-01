@@ -41,6 +41,8 @@ import { ListCardComponent } from './components/list-card/list-card.component';
 import { TechnologiesComponent } from './components/pages/technologies/technologies.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { PageDividerComponent } from './components/page-divider/page-divider.component';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { AboutComponent } from './components/pages/about/about.component';
     ListCardComponent,
     TechnologiesComponent,
     SocialIconComponent,
-    AboutComponent
+    AboutComponent,
+    PageDividerComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +76,7 @@ import { AboutComponent } from './components/pages/about/about.component';
     MatInputModule,
     CommonModule,
     FontAwesomeModule,
+
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB_IqP4L2d8rSIkgt1M0ak0BIh3ZlTAADo',
     }),

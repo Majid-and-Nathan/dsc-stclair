@@ -10,12 +10,7 @@
 }
 
 .card-list {
-    margin-top: 20px;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-self: center;
-    column-gap: 20px;
+
   
     @include small-screens {
       display: flex;
@@ -34,3 +29,42 @@
       flex-direction: column;
     }
   }
+
+  
+  img {
+    width: 270px;
+    height: 270px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include small-screens {
+      width: 100px;
+      height: 100px;
+    }
+    @include very-small-screens {
+      width: 1000px;
+      height: 1000px;
+    }
+    @include tablets {
+      width: 250px;
+      height: 250px;
+    }
+    @include mobile {
+      width: 120px;
+      height: 120px;
+    }
+  
+
+  }
+  .container {
+    margin: auto;
+  }
+  .pic-holder {
+    margin: auto !important;
+  }.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
