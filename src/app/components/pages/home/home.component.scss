@@ -35,30 +35,77 @@
   align-items: center;
   display: grid;
   justify-content: center;
-  flex-direction: column;
   grid-template-columns: 1fr 2fr;
   column-gap: 20px;
+
+  @include small-screens {
+    display: flex;
+    grid-template-columns: unset;
+    flex-direction: column;
+  }
+  @include very-small-screens {
+    display: flex;
+    grid-template-columns: unset;
+    flex-direction: column;
+  }
+  @include tablets {
+    display: flex;
+    grid-template-columns: unset;
+    flex-direction: column;
+  }
+  @include mobile {
+    display: flex;
+    grid-template-columns: unset;
+    flex-direction: column;
+  }
 }
 
 .hero-content {
+  margin-bottom: 20px;
+
+  @include large-screens{
+    margin-bottom: unset;
+  }
 }
 
 .hero-image {
+  margin: auto;
 }
+
 .logo-image {
-  width: 200px;
+  width: 150px;
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 20px;
-  
+
   animation: logoAnimation 2.4s;
   transition-delay: 2s;
+
+  @include mobile {
+    width: 30vw;
+  }
+  @include tablets {
+    width: 30vw;
+  }
+  @include very-small-screens {
+    width: 30vw;
+  }
 }
+
 .text-image {
   animation-fill-mode: forwards;
-  width: 350px;
+  width: 250px;
   animation: pulse 21s;
-  
+
+  @include mobile {
+    width: 50vw;
+  }
+  @include tablets {
+    width: 40vw;
+  }
+  @include very-small-screens {
+    width: 60vw;
+  }
 }
 
 .hero-title > h2 {
@@ -79,27 +126,38 @@
 }
 
 .card-list {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   width: 100%;
   flex-direction: row;
   align-self: center;
   column-gap: 20px;
-}
-// I was rotating an SVG shape within a larger SVG when I noticed that the shape was taking the center of the SVG viewbox as the origin of the transformation rather than its own center. To fix this add transform-box: fill-box to the shape you're rotating.
 
-// https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box
+  @include small-screens {
+    display: flex;
+    flex-direction: column;
+  }
+  @include very-small-screens {
+    display: flex;
+    flex-direction: column;
+  }
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .Header__shape {
   animation-duration: 4s;
   animation-timing-function: cubic-bezier(0.18, 1.17, 0.03, 1.46);
   animation-fill-mode: backwards;
   transform-origin: center;
-  // this here is the good stuff
   transform-box: fill-box;
 }
-
-// aaand the rest of the code
 
 body {
   background: radial-gradient(#c2c2c2 8%, transparent 8%), white;
@@ -123,10 +181,25 @@ body {
   transform: translateY(-50%);
   z-index: -1;
   will-change: transform;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include small-screens {
+    display: none;
+  }
+
+  @include very-small-screens {
+    display: none;
+  }
+
+  @include tablets {
+    display: none;
+  }
 }
 .Header__title {
-  font-family: Avenir, Futura, "Open Sans", "Gill Sans", "Helvetica Neue", Ariel,
-    sans-serif;
+  font-family: Avenir, Futura, "Open Sans", "Gill Sans", "Helvetica Neue", Ariel, sans-serif;
   font-weight: bold;
   font-size: 6vw;
   margin: 0;
@@ -137,42 +210,40 @@ body {
 }
 @keyframes pulse {
   0% {
-    opacity: 0
+    opacity: 0;
   }
   5% {
-    opacity: 0
+    opacity: 0;
   }
   10% {
-    opacity: 1
+    opacity: 1;
   }
   20% {
-    opacity: 1
+    opacity: 1;
   }
   30% {
-    opacity: 1
+    opacity: 1;
   }
   40% {
-    opacity: 1
+    opacity: 1;
   }
   50% {
-    opacity: 1
+    opacity: 1;
   }
   60% {
-    opacity: 1
+    opacity: 1;
   }
   70% {
-    opacity: 1
+    opacity: 1;
   }
   80% {
-    opacity: 1
+    opacity: 1;
   }
   100% {
-    opacity: 1
+    opacity: 1;
   }
-  
 }
 @keyframes logoAnimation {
-  
   from {
     transform: translate(0, 80%) rotate(-270deg) scale(0);
   }
@@ -180,8 +251,6 @@ body {
     transform: translateY(1) rotate(0deg) scale(1);
   }
 }
-
-  
 
 @keyframes imgAnimation {
   from {
@@ -251,8 +320,6 @@ body {
     transform: translatey(0px);
   }
 }
-
-// some lovely sass fun to stagger the animation
 
 @for $i from 1 to 12 {
   .Header__shape:nth-child(#{$i}) {
