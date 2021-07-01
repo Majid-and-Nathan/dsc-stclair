@@ -1,0 +1,21 @@
+.square {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 110px;
+  height: 70px;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  transition: ease-in-out 0.2s;
+}
+i {
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  vertical-align: center;
+}
+.square:hover {
+  cursor: pointer;
+
+  background: #ebecee;
+}

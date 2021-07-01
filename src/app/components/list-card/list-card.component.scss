@@ -20,14 +20,14 @@
 // }
 
 .feature-card{
-    box-shadow: 0 0 15px rgb(99 114 130 / 30%);
+   
     margin-bottom: 30px;
-    padding: 25px 30px;
+    padding: 20px 30px;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
-    width: 250px;
+    height: 100%;
+    width: 100%;
 }
 
 .feature-card .feature-card__body, .feature-card .u-icon{
@@ -42,7 +42,7 @@
 }
 
 .feature-title {
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 10px;
+    font-size:20px;
+    line-height: 1.5;
     color: #637282;
 }
 

@@ -39,6 +39,8 @@ import { AgmCoreModule } from '@agm/core'
 
 import { globalRippleConfig } from './config/config';
 import { ListCardComponent } from './components/list-card/list-card.component';
+import { SocialIconComponent } from './components/social-icon/social-icon.component';
+
 
 
 @NgModule({
@@ -53,6 +55,8 @@ import { ListCardComponent } from './components/list-card/list-card.component';
     HomeComponent,
     ContactUsComponent,
     ListCardComponent,
+    SocialIconComponent
+
   ],
   imports: [
     BrowserModule,
