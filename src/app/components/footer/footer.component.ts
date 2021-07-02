@@ -8,21 +8,9 @@ import { Link } from 'src/app/types';
 })
 export class FooterComponent implements OnInit {
 
-  title: string;
-  credit: string;
-  year: string;
-  links: Link[];
-
   constructor() { }
 
   ngOnInit(): void {
-    this.year = (new Date()).getFullYear().toString();
-    this.credit = `${this.title} ${this.year}`;
-    
-    this.links = [
-      { name: 'Privacy Notice', href: '#' },
-      { name: 'Careers', href: '#' },
-    ];
   }
 
 }

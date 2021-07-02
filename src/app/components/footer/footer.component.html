@@ -1,16 +1,28 @@
-<footer class="footer">
+<footer class="section-spacer footer-container">
     <div class="container">
-        <div class="credit">
-            <img src="../../../assets/images/DSC St. Clair College Light Vertical-Logo.png" alt="">
-            <div class="links-mobile" *ngIf="links">
-                <div class="link-list" *ngFor="let link of links">
-                    <a [href]="link.href" class="link">{{link.name}}</a>
-                </div>
-            </div>
+        <div class="logo-container">
+            <img class="logo" src="../../../assets/images/DSC St. Clair College Light Horizontal-Logo.png">
         </div>
-        <div class="links" *ngIf="links">
-            <div class="link-list" *ngFor="let link of links">
-                <a [href]="link.href" class="link">{{link.name}}</a>
+        <div class="content-container">
+            <div class="connect-container">
+                <h4 class="footer-heading">Connect</h4>
+                <ul class="list">
+                    <li class="item">
+                        <a>Women Techmakers</a>
+                    </li>
+                    <li class="item">
+                        <a>Google Developer Experts</a>
+                    </li>
+                    <li class="item">
+                        <a>Google Developer Groups</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="developers-container">
+                <h4 class="footer-heading">Developers</h4>
+            </div>
+            <div class="contribute-container">
+                <h4 class="footer-heading">Contribute</h4>
             </div>
         </div>
     </div>

@@ -1,67 +1,53 @@
 @import '../../../styles.scss';
 
-.footer{
-    background-color: $white;
-    color: $active-link-color;
+.footer-container{
     display: flex;
     width: 100%;
-    font-size: .8125rem;
-    align-items: center;
-    height: 4.688rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
-}
-img {
-    width: 200px;
-    @include mobile{
-        width: 150px;
-    }
-
 }
 
 .container{
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
-    grid-template-columns: auto auto;
-
-    @include mobile{
-        grid-template-columns: unset;
-    }
+    width: 70%;
+    height: 100%;
+    grid-template-columns: 1fr 3fr;
 }
 
-.links{
+.logo-container{
+}
+
+.logo{
+    width: 15vw;
+}
+
+.content-container{
     display: flex;
-    justify-content: flex-end;
-
-    @include mobile{
-        display: none;
-    }
+    column-gap: 100px;
+    padding-left: 75px;
 }
 
-.links-mobile{
-    display: none;
-
-    @include mobile{
-        display: flex;
-    }
+.footer-heading{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #1B2733;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 700;
 }
 
-.link{
-    color: $active-link-color;
+.list{
+    list-style-type: none;
+}
+
+li:first-of-type{
+    margin: 0px
+}
+
+li{
+    margin: 10px 0;
+}
+
+.item > a{
+    color: #637282;
     text-decoration: none;
-    padding-left: 20px;
-
-    @include mobile{
-        padding-left: unset;
-        padding-right: 20px;
-    }
+    background-color: transparent;
+    line-height: 1;
 }
-
-.link:hover{
-    text-decoration: underline;
-    color: $header-colors;
-}
-
