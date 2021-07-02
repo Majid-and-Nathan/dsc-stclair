@@ -20,11 +20,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.isCollapsed = false;
     this.links = [
-      { name: 'Home', href: '/', color: "#4285F4" },
-      { name: 'Team', href: '#', color: "#DB4437" },
-      { name: 'About', href: '#', color: "#F4B400" },
-      { name: 'Technologies', href: '#', color: "#0F9D58" },
-      { name: 'Contact', href: '/contact-us', color: "#4285F4" },
+      { name: 'Home', href: '/' },
+      { name: 'Team', href: '#' },
+      { name: 'About', href: '#'},
+      { name: 'Technologies', href: '#'},
+      { name: 'Contact', href: '/contact-us' },
     ];
     this.socialLinks = [
       { name: 'facebook', href: '/' },
