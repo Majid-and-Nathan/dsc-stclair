@@ -9,9 +9,10 @@
         <a
         
  
-       
+   
           *ngFor="let link of links"
           class="nav-link"
+         (click)="link.href()"
        
           >{{ link.name }}
        
