@@ -21,8 +21,8 @@ export class NavbarComponent implements OnInit {
     this.isCollapsed = false;
     this.links = [
       { name: 'Home', href: this.goToAbout },
-      { name: 'Team', href: this.goToTeam },
       { name: 'Technologies', href: this.goToTech },
+      { name: 'Team', href: this.goToTeam },
       { name: 'Contact', href: this.goToContact },
     ];
   }
@@ -66,7 +66,7 @@ export class NavbarComponent implements OnInit {
     }
   }
   goToTeam() {
-    var doc = document.getElementById('about-page');
+    var doc = document.getElementById('team-page');
     if (doc) {
       doc.scrollIntoView({ behavior: 'smooth' });
     }

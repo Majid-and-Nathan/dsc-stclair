@@ -28,6 +28,7 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+
 import {
   MatRippleModule,
   MAT_RIPPLE_GLOBAL_OPTIONS,
@@ -42,6 +43,10 @@ import { TechnologiesComponent } from './components/pages/technologies/technolog
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { PageDividerComponent } from './components/page-divider/page-divider.component';
+import { TeamComponent } from './components/pages/team/team.component';
+import { TeamCardComponent } from './components/team-card/team-card.component';
+
+
 
 
 @NgModule({
@@ -58,7 +63,9 @@ import { PageDividerComponent } from './components/page-divider/page-divider.com
     TechnologiesComponent,
     SocialIconComponent,
     AboutComponent,
-    PageDividerComponent
+    PageDividerComponent,
+    TeamComponent,
+    TeamCardComponent
   ],
   imports: [
     BrowserModule,
@@ -76,6 +83,7 @@ import { PageDividerComponent } from './components/page-divider/page-divider.com
     MatInputModule,
     CommonModule,
     FontAwesomeModule,
+
 
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB_IqP4L2d8rSIkgt1M0ak0BIh3ZlTAADo',
