@@ -1,6 +1,6 @@
 export type TeamCard = {
-    title: string;
+    name: string;
     description: string;
-    photoUrl: string;
-    icon: string;
+    photoUrl?: string;
+    icon?: string;
 }

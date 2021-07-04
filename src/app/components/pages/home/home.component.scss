@@ -370,3 +370,11 @@ body {
 .about-container{
   margin-top: 50px;
 }
+
+:host ::ng-deep .custom-scrolltop {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(26, 115, 233, 255);
+
+
+}

@@ -1,5 +1,17 @@
-<div   class="container-fluid technologies-container">
-    <div class="subtitle" data-aos="zoom-out">
-      <h4 id="tech-page" class="p-4">Our team</h4>
-  
-    </div>
+<div id="team-page" class="container-fluid team-container">
+  <div class="subtitle" data-aos="zoom-out">
+    <h4 class="p-4">Our team</h4>
+  </div>
+  <p-carousel
+    style="width: 100%"
+    [responsiveOptions]="responsiveOptions"
+    styleClass="prime-slider-override"
+    [value]="teamCards"
+    [numVisible]="3"
+    [numScroll]="1"
+  >
+    <ng-template let-card pTemplate="item">
+      <app-team-card [card]="card"></app-team-card>
+    </ng-template>
+  </p-carousel>
+</div>
