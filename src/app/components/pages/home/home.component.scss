@@ -90,6 +90,8 @@
   padding-bottom: 20px;
 
   animation: logoAnimation 2.4s;
+  // bounce 2.9s  3s infinite ;
+  
   transition-delay: 2s;
 
   @include mobile {
@@ -254,6 +256,20 @@ body {
     opacity: 1;
   }
 }
+@keyframes bounce{
+  0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-5px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
 @keyframes logoAnimation {
   
   from {
@@ -261,7 +277,10 @@ body {
   }
   to {
     transform: translateY(1) rotate(0deg) scale(1);
+    
   }
+  
+ 
 }
 
 @keyframes imgAnimation {

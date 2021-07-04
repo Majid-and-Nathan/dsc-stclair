@@ -31,13 +31,18 @@
       flex-direction: column;
     }
   }
+  
 
+  
+  
   
   img {
     width: 250px;
     height: 250px;
-    
+    margin: auto !important;
     display: block;
+   
+  
     
     @include small-screens {
       width: 100px;
