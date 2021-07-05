@@ -1,21 +1,22 @@
-<div  data-aos="fade-down"  class="container-fluid intro-box d-flex flex-column p-4">
-  <h1 >Want to get involved?</h1>
+<div data-aos="fade-down">
+  <div class="container-fluid intro-box d-flex flex-column p-4">
+    <h1>Want to get involved?</h1>
 
-  <p class="p-4">{{ content.description }}</p>
+    <p class="p-4">{{ content.description }}</p>
 
-  <button class="blue p-3">
-    <span class="button-text">Send an email</span>
-  </button>
+    <button class="blue p-3">
+      <span class="button-text">Send an email</span>
+    </button>
 
-  <p class="p-4">Check us out on...</p>
-</div>
-<div  data-aos="fade-down"  class="p-1 buttons row justify-content-center">
-  <div *ngFor="let item of icons" class="col-sm- p-3 social-button">
-    <app-social-icon
-      colour="{{ item.colour }}"
-      icon="{{ item.icon }}"
-      type="{{item.type}}"
-    ></app-social-icon>
-    
+    <p class="p-4">Check us out on...</p>
+  </div>
+  <div class="p-1 buttons row justify-content-center">
+    <div *ngFor="let item of icons" class="col-sm- p-3 social-button">
+      <app-social-icon
+        colour="{{ item.colour }}"
+        icon="{{ item.icon }}"
+        type="{{ item.type }}"
+      ></app-social-icon>
+    </div>
   </div>
 </div>
