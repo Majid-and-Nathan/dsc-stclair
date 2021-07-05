@@ -2,6 +2,8 @@
 
 .technologies-container {
     margin-top: 50px;
+    width: 100% !important;
+    padding: 0 !important;
 }
 
 .subtitle {
@@ -29,15 +31,19 @@
       flex-direction: column;
     }
   }
+  
 
   
+  
+  
   img {
-    width: 270px;
-    height: 270px;
-    padding: 20px;
+    width: 250px;
+    height: 250px;
+    margin: auto !important;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+   
+  
+    
     @include small-screens {
       width: 100px;
       height: 100px;

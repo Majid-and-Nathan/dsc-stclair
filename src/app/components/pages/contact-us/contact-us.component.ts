@@ -20,10 +20,8 @@ export class ContactUsComponent implements OnInit {
   icons: Icon[] = [];
   cards: ListCard[] = [];
   cardOneArray: string[] = [];
-  constructor(private share: ShareService) {
 
-    
-  }
+  constructor(private share: ShareService) { }
 
   ngOnInit(): void {
     this.socialLinks = [
@@ -31,7 +29,6 @@ export class ContactUsComponent implements OnInit {
       { name: 'discord', href: '/' },
       { name: 'instagram', href: '#' },
       { name: 'linkedin', href: '#' },
-
     ];
     this.content = {
       title: 'Want to get involved?',
@@ -46,7 +43,7 @@ export class ContactUsComponent implements OnInit {
       postalCode: 'N0B 215',
       address: '555 Dougal Ave',
     };
-    
+
     this.cards.push({
       title: "Location",
       icon: "fa-search-location",
@@ -55,25 +52,18 @@ export class ContactUsComponent implements OnInit {
         'St. Clair College',
         'Windsor, ON',
         'N0B 215'
-        
       ]
-   
-    
     });
 
-   
     this.cards.push({
       title: "Contact",
       icon: "fa-network-wired",
       colour: "F4B400",
-
       listItems: [
         'hello@hotmail.com',
         '(519)-214-143',
         'N0B 215'
-        
       ]
-    
     });
     this.icons.push({
       icon: "fab fa-discord",
@@ -103,15 +93,9 @@ export class ContactUsComponent implements OnInit {
       colour: "#f09433",
       type: "instagram"
     })
-
-    
-
-    
-    
-    
-  
   }
 }
+
 function tap(arg0: () => void): any {
   throw new Error('Function not implemented.');
 }

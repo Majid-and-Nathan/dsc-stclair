@@ -1,11 +1,11 @@
 .square {
-
   margin: auto;
   text-align: center;
   padding-top: 15px;
   padding: 25px;
   transition: ease-in-out 0.2s;
 }
+
 i {
   font-size: 45px;
   text-align: center;
@@ -15,21 +15,23 @@ i {
   transition: ease-in-out 0.2s;
   color: black;
 }
+
 i:hover {
   cursor: pointer;
 }
+
 .discord:hover {
-  color:#7289DA;
+  color: #7289da;
 }
 .linkedin:hover {
-  color: #0077B5;
+  color: #0077b5;
 }
 .github:hover {
   color: #6e5494;
 }
 .facebook:hover {
-  color: #1778F2;
+  color: #1778f2;
 }
 .instagram:hover {
-  color:#405DE6
+  color: #405de6;
 }

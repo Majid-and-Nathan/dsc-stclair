@@ -5,7 +5,7 @@
   background-color: $white;
   min-width: 100vw;
   position: sticky;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0 0 15px rgb(99 114 130 / 30%);
   @include mobile {
     height: 50px !important;
   }
@@ -64,18 +64,17 @@ button {
   letter-spacing: 1px;
 }
 
-.navbar-nav a:hover {
-  transform: scale(1.15);
-}
+
 
 /* Underline From Center */
 .navbar-nav a {
   font-family: "Google Sans", Fallback, sans-serif;
-  margin-left: 20px;
-  color: rgba(136,135,140,255);
-  font-size: 20px;
-  transition: all 0.1s ease-in-out;
+  margin-left: 28px;
+  color: #757575;
+  font-size: 17px;
 
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
@@ -87,10 +86,10 @@ button {
   content: "";
   transition: all 0.3s ease-in-out;
   display: block;
-  height: 1.5px;
+  height: 1.6px;
   left: 50%;
   position: absolute;
-  background: rgb(245, 240, 240);
+  background: rgb(236, 232, 232);
   transition: width 0.4s ease 0s, left 0.4s ease 0s;
 
   width: 0;
@@ -99,14 +98,7 @@ button {
   width: 100%;
   left: 0;
 }
-.active-link::after {
-  width: 100% !important;
-  left: 0 !important;
-}
 
-.active-link {
-  transform: scale(1.15) !important;
-}
 
 .nav-link {
   vertical-align: auto;

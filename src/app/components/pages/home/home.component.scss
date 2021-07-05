@@ -10,6 +10,18 @@
   display: flex;
   width: 70%;
   height: 100%;
+  @include small-screens {
+    width: 100%;
+  }
+  @include very-small-screens {
+    width: 70%;
+  }
+  @include tablets {
+    
+  }
+  @include mobile {
+    width: 80%;
+  }
   align-self: center;
   flex-direction: column;
   justify-self: center;
@@ -71,15 +83,27 @@
 
 .hero-image {
   margin: auto;
+  
+}
+.two-logos {
+  display: flex;
+  justify-content: middle;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .logo-image {
-  width: 150px;
+
+  width: 100px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 20px;
 
   animation: logoAnimation 2.4s;
+  // bounce 2.9s  3s infinite ;
+  
   transition-delay: 2s;
 
   @include mobile {
@@ -95,7 +119,7 @@
 
 .text-image {
   animation-fill-mode: forwards;
-  width: 250px;
+  width: 310px;
   animation: pulse 21s;
 
   @include mobile {
@@ -169,7 +193,7 @@ body {
 
 .Header {
   position: relative;
-
+    margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,13 +268,31 @@ body {
     opacity: 1;
   }
 }
+@keyframes bounce{
+  0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-5px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
 @keyframes logoAnimation {
+  
   from {
-    transform: translate(0, 80%) rotate(-270deg) scale(0);
+    transform: translate(0, 120%) rotate(-270deg) scale(0);
   }
   to {
     transform: translateY(1) rotate(0deg) scale(1);
+    
   }
+  
+ 
 }
 
 @keyframes imgAnimation {
@@ -340,3 +382,4 @@ body {
 .about-container{
   margin-top: 50px;
 }
+

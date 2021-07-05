@@ -1,10 +1,18 @@
 <footer class="section-spacer footer-container">
     <div class="container">
         <div class="logo-container">
-            <img class="logo" src="../../../assets/images/DSC St. Clair College Light Horizontal-Logo.png">
+            <img class="logo" src="../../../assets/images/DSC-Horizontal.png">
+            <div class="logo-content">
+                <div class="credit">
+                    <span>&copy; {{credit}}</span>
+                </div>
+                <div class="socials">
+                    <i *ngFor="let item of icons" [class]="item.name + ' icon'" (click)="navigate(item.href)"></i>
+                </div>
+            </div>
         </div>
         <div class="content-container">
-            <div class="connect-container">
+            <div class="link-group">
                 <h4 class="footer-heading">Connect</h4>
                 <ul class="list">
                     <li class="item">
@@ -18,7 +26,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="developers-container">
+            <div class="link-group">
                 <h4 class="footer-heading">Developers</h4>
                 <ul class="list">
                     <li class="item">
@@ -32,7 +40,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="contribute-container">
+            <div class="link-group">
                 <h4 class="footer-heading">Contribute</h4>
                 <ul class="list">
                     <li class="item">

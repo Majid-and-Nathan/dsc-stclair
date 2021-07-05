@@ -20,18 +20,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.isCollapsed = false;
     this.links = [
-      { name: 'Home', href: '/' },
-      { name: 'Team', href: '#' },
-      { name: 'About', href: '#'},
-      { name: 'Technologies', href: '#'},
-      { name: 'Contact', href: '/contact-us' },
-    ];
-    this.socialLinks = [
-      { name: 'facebook', href: '/' },
-      { name: 'Team', href: '/' },
-      { name: 'About', href: '#' },
-      { name: 'Technologies', href: '#' },
-
+      { name: 'Home', href: this.goToAbout },
+      { name: 'Technologies', href: this.goToTech },
+      { name: 'Team', href: this.goToTeam },
+      { name: 'Contact', href: this.goToContact },
     ];
   }
   openDialog() {
@@ -54,5 +46,29 @@ export class NavbarComponent implements OnInit {
       panelClass: 'dialog-container-custom',
       position: { rowEnd: '0' },
     });
+  }
+  goToAbout() {
+    var doc = document.getElementById('about-page');
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  goToContact() {
+    var doc = document.getElementById('contact-page');
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  goToTech() {
+    var doc = document.getElementById('tech-page');
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  goToTeam() {
+    var doc = document.getElementById('team-page');
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

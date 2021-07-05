@@ -1,6 +1,6 @@
 export type Icon = {
     icon: string;
-    colour: string;
-    type: string;
+    colour?: string;
+    type?: string;
 }
 
