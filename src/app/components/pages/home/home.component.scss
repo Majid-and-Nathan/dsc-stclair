@@ -10,6 +10,18 @@
   display: flex;
   width: 70%;
   height: 100%;
+  @include small-screens {
+    width: 100%;
+  }
+  @include very-small-screens {
+    width: 70%;
+  }
+  @include tablets {
+    
+  }
+  @include mobile {
+    width: 80%;
+  }
   align-self: center;
   flex-direction: column;
   justify-self: center;
@@ -371,10 +383,3 @@ body {
   margin-top: 50px;
 }
 
-:host ::ng-deep .custom-scrolltop {
-  width: 5rem;
-  height: 5rem;
-  background-color: rgba(26, 115, 233, 255);
-
-
-}

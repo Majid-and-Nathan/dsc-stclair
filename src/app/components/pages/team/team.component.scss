@@ -1,4 +1,7 @@
 @import "../../../../styles.scss";
+.carousel-container {
+  width: 100%;
+}
 .team-container {
     margin-top: 50px;
     width: 100% !important;
@@ -23,16 +26,16 @@ h4 {
             height: 60px;
             box-shadow: 0 0 15px rgb(99 144 130 / 15%);
             @include mobile {
-                width: 30px !important;
-                height: 30px;
+                width: 25px !important;
+                height: 25px !important;
               }
             
               @include tablets {
-                width: 40px !important;   height: 30px;
+                width: 40px !important;   height: 30px !important;
               }
             
               @include very-small-screens {
-                width: 30px !important;   height: 30px;
+                width: 25px !important;   height: 25px !important;
               }
 
         }
