@@ -1,5 +1,14 @@
 @import "../../../../styles.scss";
 
+.container-fluid{
+  padding: 0px !important;
+}
+
+.row {
+  margin: 0px !important;
+  margin-bottom: 50px !important;
+}
+
 .technologies-container {
   margin-top: 50px;
   width: 100% !important;
@@ -9,6 +18,7 @@
 .subtitle {
   color: #1b2733;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .card-list {
@@ -31,7 +41,9 @@
 }
 
 img {
-  width: 30vw;
+  width: 20vw;
+  max-width: 225px;
+  min-width: 120px;
   // width: 250px;
   // height: 250px;
   margin: auto !important;
