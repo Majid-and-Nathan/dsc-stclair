@@ -3,7 +3,7 @@
 .container-fluid {
   display: flex;
   justify-content: center;
-  
+  padding: 0px !important;
 }
 
 .content-container {
@@ -11,16 +11,16 @@
   width: 70%;
   height: 100%;
   @include small-screens {
-    width: 100%;
+    width: 95%;
   }
   @include very-small-screens {
-    width: 70%;
+    width: 95%;
   }
   @include tablets {
-    
+    width: 95%;
   }
   @include mobile {
-    width: 80%;
+    width: 95%;
   }
   align-self: center;
   flex-direction: column;
@@ -76,14 +76,13 @@
 .hero-content {
   margin-bottom: 20px;
 
-  @include large-screens{
+  @include large-screens {
     margin-bottom: unset;
   }
 }
 
 .hero-image {
   margin: auto;
-  
 }
 .two-logos {
   display: flex;
@@ -93,7 +92,6 @@
 }
 
 .logo-image {
-
   width: 100px;
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -103,7 +101,7 @@
 
   animation: logoAnimation 2.4s;
   // bounce 2.9s  3s infinite ;
-  
+
   transition-delay: 2s;
 
   @include mobile {
@@ -133,7 +131,8 @@
   }
 }
 
-.title > h2, h4 {
+.title > h2,
+h4 {
   color: #1b2733;
 }
 
@@ -193,7 +192,7 @@ body {
 
 .Header {
   position: relative;
-    margin-top: 100px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,31 +267,24 @@ body {
     opacity: 1;
   }
 }
-@keyframes bounce{
+@keyframes bounce {
   0% {
-	
-		transform: translatey(0px);
-	}
-	50% {
-	
-		transform: translatey(-5px);
-	}
-	100% {
-		
-		transform: translatey(0px);
-	}
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 @keyframes logoAnimation {
-  
   from {
     transform: translate(0, 120%) rotate(-270deg) scale(0);
   }
   to {
     transform: translateY(1) rotate(0deg) scale(1);
-    
   }
-  
- 
 }
 
 @keyframes imgAnimation {
@@ -370,16 +362,15 @@ body {
   }
 }
 
-.technologies-container{
+.technologies-container {
   margin-top: 50px;
 }
 
-.subtitle{
+.subtitle {
   color: #1b2733;
   text-align: center;
 }
 
-.about-container{
+.about-container {
   margin-top: 50px;
 }
-
