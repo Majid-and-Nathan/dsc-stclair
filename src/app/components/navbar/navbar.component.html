@@ -1,44 +1,13 @@
-<nav class="navbar navbar-expand-lg">
-
-  <div class="container-fluid row justify-content-between">
-    <img src="../../../assets/images/DSC-Horizontal.png" alt="" class="navbar-logo">
-    <i class="far fa-computer-classic"></i>
-    <div class="col">
-      <div class="navbar-nav">
-        
-        <a
-        
- 
-   
-          *ngFor="let link of links"
-          class="nav-link"
-         (click)="link.href()"
-       
-          >{{ link.name }}
-       
-          
-        </a>
-        <div>
-     
-       
-            
-        </div>
-      </div>
-    </div>
- 
-    <button
-    (click)="openDialog()"
-
-      class="navbar-toggler hidden-sm-up"
-      type="button"
-     
-      aria-controls="collapsingNavbar2"
-  
-      aria-label="Toggle navigation"
-    >
-      <mat-icon>menu</mat-icon>
-    </button>
+<nav class="navbar">
+  <div class="logo-container">
+    <img src="../../../assets/images/DSC-Horizontal.png" alt="DSC Logo" class="logo">
   </div>
-
+  <div class="links-container">
+    <a *ngFor="let link of links" class="nav-link" (click)="link.href()">
+      {{link.name}}
+    </a>
+  </div>
+  <div class="button-container">
+    <mat-icon (click)="openDialog()">menu</mat-icon>
+  </div>
 </nav>
-

@@ -11,16 +11,16 @@
   width: 70%;
   height: 100%;
   @include small-screens {
-    width: 95%;
+    width: 92%;
   }
   @include very-small-screens {
-    width: 95%;
+    width: 92%;
   }
   @include tablets {
-    width: 95%;
+    width: 92%;
   }
   @include mobile {
-    width: 95%;
+    width: 92%;
   }
   align-self: center;
   flex-direction: column;

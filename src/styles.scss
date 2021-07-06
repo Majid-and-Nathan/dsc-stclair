@@ -68,9 +68,9 @@ $angular-boiler-plate-theme: mat-light-theme(
 
 app-navbar {
   position: fixed;
-  display: block;
   z-index: 1;
 }
+
 html,
 body {
   margin: 0;
