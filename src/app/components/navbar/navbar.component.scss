@@ -76,6 +76,10 @@
   overflow: hidden;
 }
 
+.nav-link:hover{
+  color: rgba(26, 115, 233, 255);
+}
+
 .nav-link::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
