@@ -13,9 +13,7 @@
   <div class="p-1 buttons row justify-content-center">
     <div *ngFor="let item of icons" class="col-sm- p-3 social-button">
       <app-social-icon
-        colour="{{ item.colour }}"
-        icon="{{ item.icon }}"
-        type="{{ item.type }}"
+        [icon] = item
       ></app-social-icon>
     </div>
   </div>

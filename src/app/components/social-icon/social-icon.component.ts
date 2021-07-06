@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Icon } from 'src/app/types/icon';
 
 @Component({
   selector: 'app-social-icon',
@@ -6,9 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./social-icon.component.scss']
 })
 export class SocialIconComponent implements OnInit {
-  @Input() icon: string;
-  @Input() colour: string;
-  @Input() type: string;
+  @Input() icon: Icon;
+
 
   constructor() { }
 

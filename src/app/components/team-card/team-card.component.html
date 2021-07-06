@@ -1,9 +1,19 @@
 <div class="feature-card">
-  <div class="feature-card-body">
-      <img [src]="card.photoUrl" />
-  
-      <h4 class="feature-title">{{card.name}}</h4>
-      <p>{{card.description}}</p>
+  <div class="feature-card-body body-top">
+    <div
+      style="background-image: url('{{
+        card.photoUrl
+      }}'), linear-gradient(to bottom right, #ffff,#ffff, #ffffff);"
+      class="avatar"
+    ></div>
   </div>
-  <div class="social-holders"></div>
+
+  <div class="feature-card-body body-bottom">
+    <h4 class="feature-title">{{ card.name }}</h4>
+    <h3> {{ card.role }}</h3>
+    <p>{{ card.description }}</p>
+    <div class="socials">
+      <i *ngFor="let item of card.icons" [class]="item.icon + ' icon'"></i>
+  </div>
+  </div>
 </div>
