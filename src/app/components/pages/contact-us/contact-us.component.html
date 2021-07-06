@@ -1,5 +1,5 @@
-<div data-aos="fade-down">
-  <div class="container-fluid intro-box d-flex flex-column p-4">
+<div >
+  <div data-aos="fade-down" class="container-fluid intro-box d-flex flex-column p-4">
     <h1>Want to get involved?</h1>
 
     <p class="p-4">{{ content.description }}</p>
@@ -10,7 +10,7 @@
 
     <p class="p-4">Check us out on...</p>
   </div>
-  <div class="p-1 buttons row justify-content-center">
+  <div  data-aos="fade-down" class="p-1 buttons row justify-content-center">
     <div *ngFor="let item of icons" class="col-sm- p-3 social-button">
       <app-social-icon
         [icon] = item
