@@ -3,7 +3,7 @@
     <img src="../../../assets/images/DSC-Horizontal.png" alt="DSC Logo" class="logo">
   </div>
   <div class="links-container">
-    <a *ngFor="let link of links" class="nav-link" (click)="link.href()">
+    <a *ngFor="let link of links" class="nav-link" (click)="goToPage(link.href)">
       {{link.name}}
     </a>
   </div>

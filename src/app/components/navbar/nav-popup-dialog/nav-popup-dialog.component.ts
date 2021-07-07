@@ -13,11 +13,10 @@ export class NavPopupDialogComponent implements OnInit {
   socialLinks: Link[];
   ngOnInit(): void {
     this.links = [
-      { name: 'Home', href: '/' },
-      { name: 'Team', href: '#'},
-      { name: 'About', href: '#' },
-      { name: 'Technologies', href: '#' },
-      { name: 'Contact', href: '/contact-us' },
+      { name: 'Home', href: 'about-page' },
+      { name: 'Technologies', href: 'tech-page' },
+      { name: 'Team', href: 'team-page' },
+      { name: 'Contact', href: 'contact-page'},
     ];
     this.socialLinks = [
       { name: 'facebook', href: '/' },
@@ -30,4 +29,12 @@ export class NavPopupDialogComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
+  goToPage(name: any) {
+    this.dialogRef.close();
+    var doc = document.getElementById(name);
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

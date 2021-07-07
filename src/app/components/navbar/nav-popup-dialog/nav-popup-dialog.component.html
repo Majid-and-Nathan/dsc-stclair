@@ -1,30 +1,24 @@
 <div class="navbar-nav">
-  <button
-  (click)="closeDialog()"
-    mat-icon-button
-    class="navbar-toggler hidden-sm-up"
-    type="button"
-   
-    aria-controls="collapsingNavbar2"
 
-    aria-label="Toggle navigation"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
+    <mat-icon
+    (click)="closeDialog()">menu</mat-icon>
+
 
   <div class="d-flex flex-column">
     
     <a
-      (click) = "closeDialog()" 
-      *ngFor="let link of links"
+    *ngFor="let link of links"
+      
+  
       matRipple
       [matRippleColor]="'9BB1FF'"
       [matRippleCentered]="true"
       [matRippleRadius]="700"
       class="nav-link"
-   
+      (click)="goToPage(link.href)"
+
     
-      routerLink="{{link.href}}"
+     
       >{{ link.name }}
     </a>
     <div class="container-fluid">
