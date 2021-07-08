@@ -10,15 +10,8 @@
       [matRippleRadius]="700"
       class="nav-link"
       href="{{ link.href }}"
-      (click) ="goToPage()"
+      (click)="goToPage()"
       >{{ link.name }}
     </a>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div *ngFor="let link of socialLinks" class="col-">
-          <i class="fab fa-{{ link.name }} "></i>
-        </div>
-      </div>
-    </div>
   </div>
 </div>

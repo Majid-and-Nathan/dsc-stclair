@@ -90,16 +90,22 @@
   justify-content: middle;
   align-items: flex-start;
   flex-wrap: wrap;
+
 }
 
 .logo-image {
-  width: 100px;
+  width: 90px;
   padding-left: 10px !important;
   padding-right: 10px !important;
+  padding-bottom: 0px !important;
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 20px;
+  animation-delay: 1s;
   animation: logoAnimation 2.4s;
+
+  // bounce 2.9s  3s infinite ;
+
   transition-delay: 2s;
 
   @include mobile {
@@ -115,8 +121,10 @@
 
 .text-image {
   animation-fill-mode: forwards;
-  width: 310px;
-  animation: pulse 21s;
+  width: 340px;
+  animation: pulse 0.5s;
+  border-radius: 50%;
+ 
 
   @include mobile {
     width: 50vw;
@@ -152,6 +160,7 @@ h4 {
   animation-timing-function: cubic-bezier(0.18, 1.17, 0.03, 1.46);
   animation-fill-mode: backwards;
   transform-origin: center;
+ 
   transform-box: fill-box;
 }
 
@@ -173,9 +182,10 @@ body {
 .Header__svg {
   position: absolute;
   width: 100%;
+  
   top: 50%;
   transform: translateY(-50%);
-  z-index: -1;
+
   will-change: transform;
 
   @include mobile {
@@ -205,39 +215,13 @@ body {
   animation-name: bigSquare;
 }
 @keyframes pulse {
-  0% {
-    opacity: 0;
+  from {
+    transform: scale(0);
   }
-  5% {
-    opacity: 0;
+  to {
+    transform:  scale(1);
   }
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+   
 }
 @keyframes bounce {
   0% {
@@ -252,10 +236,10 @@ body {
 }
 @keyframes logoAnimation {
   from {
-    transform: translate(0, 120%) rotate(-270deg) scale(0);
+    transform: rotate(-270deg) scale(0);
   }
   to {
-    transform: translateY(1) rotate(0deg) scale(1);
+    transform:  rotate(0deg) scale(1);
   }
 }
 
@@ -270,7 +254,7 @@ body {
 
 @keyframes bigSquare {
   from {
-    transform: translate(160%, 53%) rotate(-70deg) scale(0);
+    transform: translate(160%, 143%) rotate(-70deg) scale(0);
   }
   to {
     transform: translateY(1) rotate(0deg) scale(0.7);
@@ -281,7 +265,8 @@ body {
 }
 @keyframes littleSquare {
   from {
-    transform: translate(226%, 183%) rotate(140deg) scale(0);
+    
+    transform: translate(226%, 59%) rotate(140deg) scale(0);
   }
   to {
     transform: translate(0%, 0%) rotate(0deg) scale(1);
@@ -296,7 +281,7 @@ body {
 }
 @keyframes bigCircle {
   from {
-    transform: scale(0) translate(60%, 3%);
+    transform: scale(0) translate(-200%, 3%);
   }
   to {
     transform: scale(1) translate(0%, 0%);
@@ -307,7 +292,7 @@ body {
 }
 @keyframes littleCircle {
   from {
-    transform: scale(0) translate(26%, 343%);
+    transform: scale(0) translate(-236%, 343%);
   }
   to {
     transform: scale(1);
@@ -328,11 +313,6 @@ body {
   }
 }
 
-@for $i from 1 to 12 {
-  .Header__shape:nth-child(#{$i}) {
-    animation-delay: $i * 0.1s;
-  }
-}
 
 .technologies-container {
   margin-top: 50px;
@@ -346,3 +326,4 @@ body {
 .about-container {
   margin-top: 50px;
 }
+
