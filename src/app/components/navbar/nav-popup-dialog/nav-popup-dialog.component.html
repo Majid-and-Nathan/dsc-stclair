@@ -1,34 +1,24 @@
 <div class="navbar-nav">
-
-    <mat-icon
-    (click)="closeDialog()">menu</mat-icon>
-
+  <mat-icon (click)="closeDialog()">menu</mat-icon>
 
   <div class="d-flex flex-column">
-    
     <a
-    *ngFor="let link of links"
-      
-  
+      *ngFor="let link of links"
       matRipple
       [matRippleColor]="'9BB1FF'"
       [matRippleCentered]="true"
       [matRippleRadius]="700"
       class="nav-link"
-      (click)="goToPage(link.href)"
-
-    
-     
+      href="{{ link.href }}"
+      (click) ="goToPage()"
       >{{ link.name }}
     </a>
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div  *ngFor="let link of socialLinks"  class="col-">
-          <i class="fab fa-{{link.name}} "></i>
+        <div *ngFor="let link of socialLinks" class="col-">
+          <i class="fab fa-{{ link.name }} "></i>
         </div>
-       
       </div>
     </div>
-
   </div>
 </div>
