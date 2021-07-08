@@ -9,7 +9,6 @@ import { Icon } from 'src/app/types/icon';
 export class SocialIconComponent implements OnInit {
   @Input() icon: Icon;
 
-
   constructor() { }
 
   ngOnInit(): void {

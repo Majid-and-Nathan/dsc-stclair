@@ -84,6 +84,7 @@
 .hero-image {
   margin: auto;
 }
+
 .two-logos {
   display: flex;
   justify-content: middle;
@@ -98,10 +99,7 @@
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 20px;
-
   animation: logoAnimation 2.4s;
-  // bounce 2.9s  3s infinite ;
-
   transition-delay: 2s;
 
   @include mobile {
@@ -147,32 +145,6 @@ h4 {
   color: #637282;
   font-size: 1rem;
   font-weight: normal;
-}
-
-.card-list {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-self: center;
-  column-gap: 20px;
-
-  @include small-screens {
-    display: flex;
-    flex-direction: column;
-  }
-  @include very-small-screens {
-    display: flex;
-    flex-direction: column;
-  }
-  @include tablets {
-    display: flex;
-    flex-direction: column;
-  }
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .Header__shape {

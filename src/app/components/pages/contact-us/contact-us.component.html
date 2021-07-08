@@ -1,23 +1,14 @@
-<div id="contact-page-mobile" data-aos="fade-down"  
-
-data-aos-anchor="#trigger-contact"
-data-aos-anchor-placement="top-top">
-  <div class="container-fluid intro-box d-flex flex-column p-4">
-    <h1>Want to get involved?</h1>
-
-    <p class="p-4">{{ content.description }}</p>
-
-    <button class="blue p-3"  >
-      <span class="button-text">Send an email</span>
-    </button>
-
-    <p class="p-4">Check us out on...</p>
+<div id="contact-page-mobile" data-aos="fade-down" data-aos-anchor="#trigger-contact"
+  data-aos-anchor-placement="top-top">
+  <div class="intro-box">
+    <h4 class="subtitle">Want to get involved?</h4>
+    <p class="p-4 text">{{ content.description }}</p>
+    <button class="email-button">Send an email</button>
+    <p class="p-4 text">Check us out on...</p>
   </div>
-  <div  class="p-1 buttons row justify-content-center">
-    <div *ngFor="let item of icons" class="col-sm- p-3 social-button">
-      <app-social-icon 
-        [icon] = item
-      ></app-social-icon>
+  <div class="buttons row justify-content-center">
+    <div *ngFor="let item of icons" class="col-sm- social-button">
+      <app-social-icon [icon]=item></app-social-icon>
     </div>
   </div>
 </div>

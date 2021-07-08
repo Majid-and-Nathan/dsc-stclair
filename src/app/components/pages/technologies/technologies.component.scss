@@ -1,6 +1,6 @@
 @import "../../../../styles.scss";
 
-.container-fluid{
+.container-fluid {
   padding: 0px !important;
 }
 
@@ -9,8 +9,11 @@
   margin-bottom: 50px !important;
 }
 
+.row:last-child {
+  margin-bottom: 0px !important;
+}
+
 .technologies-container {
-  margin-top: 50px;
   width: 100% !important;
   padding: 0 !important;
 }
@@ -44,27 +47,8 @@ img {
   width: 20vw;
   max-width: 225px;
   min-width: 120px;
-  // width: 250px;
-  // height: 250px;
   margin: auto !important;
   display: block;
-
-  @include small-screens {
-    // width: 100px;
-    // height: 100px;
-  }
-  @include very-small-screens {
-    // width: 1000px;
-    // height: 1000px;
-  }
-  @include tablets {
-    // width: 250px;
-    // height: 250px;
-  }
-  @include mobile {
-    // width: 120px;
-    // height: 120px;
-  }
 }
 .container {
   margin: auto;
@@ -75,6 +59,12 @@ img {
     padding-bottom: 40px;
   }
   @include tablets {
+    padding-bottom: 40px;
+  }
+  @include very-small-screens {
+    padding-bottom: 40px;
+  }
+  @include small-screens {
     padding-bottom: 40px;
   }
 }

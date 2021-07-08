@@ -1,23 +1,20 @@
-.feature-card{
+.feature-card {
   box-shadow: 0 0 15px rgb(99 114 130 / 30%);
-  margin-bottom: 30px;
-
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
 }
 .feature-card-body {
-  
   padding: 5px 5px;
 }
 
-.feature-card .feature-card__body, .feature-card .u-icon{
+.feature-card .feature-card__body,
+.feature-card .u-icon {
   -webkit-box-flex: 1;
   flex: 1;
 }
-
-
 
 .feature-title {
   font-size: 16px;
@@ -25,14 +22,23 @@
   margin-top: 19px;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #1B2733;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: #1b2733;
   font-family: "Google Sans", sans-serif;
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
-  
-  
 }
 
 p {
@@ -57,14 +63,13 @@ p {
 .avatar {
   flex-shrink: 0;
 
-
-	border: calc(3px + 0.1vw) solid transparent;
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	background-size: cover;
-	box-sizing: border-box;
+  border: calc(3px + 0.1vw) solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
   border-radius: 50%;
-	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
 
   display: block;
   width: 90px;
@@ -72,8 +77,8 @@ p {
   margin: auto;
 }
 
-.body-top, .body-bottom {
-
+.body-top,
+.body-bottom {
   width: 100%;
   margin: 0 auto;
 
