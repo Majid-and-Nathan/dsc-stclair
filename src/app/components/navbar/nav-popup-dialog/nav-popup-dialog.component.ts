@@ -16,7 +16,7 @@ export class NavPopupDialogComponent implements OnInit {
       { name: 'Home', href: '#about-page' },
       { name: 'Technologies', href: '#tech-page' },
       { name: 'Team', href: '#team-page-mobile' },
-      { name: 'Contact', href: '#contact-page'},
+      { name: 'Contact', href: '#contact-page-mobile'},
     ];
     this.socialLinks = [
       { name: 'facebook', href: '/' },

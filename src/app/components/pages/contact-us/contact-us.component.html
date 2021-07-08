@@ -1,4 +1,4 @@
-<div data-aos="fade-down"  
+<div id="contact-page-mobile" data-aos="fade-down"  
 
 data-aos-anchor="#trigger-contact"
 data-aos-anchor-placement="top-top">
@@ -7,7 +7,7 @@ data-aos-anchor-placement="top-top">
 
     <p class="p-4">{{ content.description }}</p>
 
-    <button class="blue p-3">
+    <button class="blue p-3"  >
       <span class="button-text">Send an email</span>
     </button>
 
@@ -15,7 +15,7 @@ data-aos-anchor-placement="top-top">
   </div>
   <div  class="p-1 buttons row justify-content-center">
     <div *ngFor="let item of icons" class="col-sm- p-3 social-button">
-      <app-social-icon
+      <app-social-icon 
         [icon] = item
       ></app-social-icon>
     </div>
