@@ -27,10 +27,9 @@ import { MatDivider, MatDividerModule } from '@angular/material/divider';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {CarouselModule} from 'primeng/carousel';
-import {MenuItem} from 'primeng/api';    
-import {ScrollTopModule} from 'primeng/scrolltop';
-
+import { CarouselModule } from 'primeng/carousel';
+import { MenuItem } from 'primeng/api';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 import {
   MatRippleModule,
@@ -41,7 +40,6 @@ import { MatInputModule } from '@angular/material/input';
 import { AgmCoreModule } from '@agm/core'
 
 import { globalRippleConfig } from './config/config';
-import { ListCardComponent } from './components/list-card/list-card.component';
 import { TechnologiesComponent } from './components/pages/technologies/technologies.component';
 import { SocialIconComponent } from './components/social-icon/social-icon.component';
 import { AboutComponent } from './components/pages/about/about.component';
@@ -49,10 +47,6 @@ import { PageDividerComponent } from './components/page-divider/page-divider.com
 import { TeamComponent } from './components/pages/team/team.component';
 
 import { TeamCardComponent } from './components/team-card/team-card.component';
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -64,7 +58,6 @@ import { TeamCardComponent } from './components/team-card/team-card.component';
     ButtonComponent,
     HomeComponent,
     ContactUsComponent,
-    ListCardComponent,
     TechnologiesComponent,
     SocialIconComponent,
     AboutComponent,
@@ -102,4 +95,4 @@ import { TeamCardComponent } from './components/team-card/team-card.component';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
