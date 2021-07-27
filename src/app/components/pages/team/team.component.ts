@@ -16,7 +16,7 @@ export class TeamComponent implements OnInit {
   ngOnInit(): void {
     
     this.teamCards.push({
-      name: "Sammy Doe",
+      name: "Nathan Romero",
       photoUrl: "../../../assets/images/angular-logo.png",
       description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       role: "Lead",
@@ -35,7 +35,7 @@ export class TeamComponent implements OnInit {
 
     );
     this.teamCards.push({
-      name: "Sarah Jane",
+      name: "Omar Yousef",
       role: "Co-Lead",
       photoUrl: "../../../assets/images/dsc-icon.png",
       description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
@@ -52,9 +52,9 @@ export class TeamComponent implements OnInit {
         }
       ]});
     this.teamCards.push({
-      name: "Adam Doe",
-      role: "Project Manager",
-      photoUrl: "../../../assets/images/dotnet-logo.png",
+      name: "Wusiman Yibulayin",
+      role: "Technical Lead",
+      photoUrl: "../../../assets/images/selfies/wusiman.png",
       description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       icons: [
         {
@@ -70,9 +70,27 @@ export class TeamComponent implements OnInit {
       ]
     });
     this.teamCards.push({
-      name: "Peter Jane",
-      photoUrl: "../../../assets/images/flutter-logo.png",
-      role: "Social Media Coordinateor",
+      name: "Brooke Baird",
+      role: "Secretary",
+      photoUrl: "../../../assets/images/selfies/brooke.png",
+      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
+      icons: [
+        {
+          icon: "fab fa-github",
+          colour: "d66ba0",
+          type: "github"
+        },
+        {
+          icon: "fab fa-linkedin",
+          colour: "#0077B5",
+          type: "linkedin"
+        }
+      ]
+    });
+    this.teamCards.push({
+      name: "Utsav Dave",
+      photoUrl: "../../../assets/images/selfies/david.png",
+      role: "Software Developer",
       description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       icons: [
         {
@@ -89,9 +107,9 @@ export class TeamComponent implements OnInit {
 
     });
     this.teamCards.push({
-      name: "James Doe",
-      photoUrl: "src\assets\images\left-logo.png",
-      role: "Leader",
+      name: "Ryan Murphy",
+      photoUrl: "../../../assets/images/selfies/bryan.png",
+      role: "Software Developer",
       description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       icons: [
         {
