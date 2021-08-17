@@ -100,8 +100,12 @@ body {
 }
 
 @font-face {
-  font-family: 'Google Sans';
-  src: url('../src/assets/fonts/ProductSans.ttf'); 
+  font-family: 'Google Sans Bold';
+  src: url('../src/assets/fonts/GoogleSans-Bold-v1.27.ttf'); 
+}
+@font-face {
+  font-family: 'Google Sans Regular';
+  src: url('../src/assets/fonts/GoogleSansDisplay-Regular-v1.27.ttf'); 
 }
 
 img {

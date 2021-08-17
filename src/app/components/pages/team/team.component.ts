@@ -18,7 +18,6 @@ export class TeamComponent implements OnInit {
     this.teamCards.push({
       name: "Nathan Romero",
       photoUrl: "../../../assets/images/angular-logo.png",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       role: "Lead",
       icons: [
         {
@@ -37,8 +36,7 @@ export class TeamComponent implements OnInit {
     this.teamCards.push({
       name: "Omar Yousef",
       role: "Co-Lead",
-      photoUrl: "../../../assets/images/dsc-icon.png",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
+      photoUrl: "../../../assets/images/selfies/omar.png",
       icons: [
         {
           icon: "fab fa-github",
@@ -55,7 +53,6 @@ export class TeamComponent implements OnInit {
       name: "Wusiman Yibulayin",
       role: "Technical Lead",
       photoUrl: "../../../assets/images/selfies/wusiman.png",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       icons: [
         {
           icon: "fab fa-github",
@@ -73,7 +70,40 @@ export class TeamComponent implements OnInit {
       name: "Brooke Baird",
       role: "Secretary",
       photoUrl: "../../../assets/images/selfies/brooke.png",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
+      icons: [
+        {
+          icon: "fab fa-github",
+          colour: "d66ba0",
+          type: "github"
+        },
+        {
+          icon: "fab fa-linkedin",
+          colour: "#0077B5",
+          type: "linkedin"
+        }
+      ]
+    });
+    this.teamCards.push({
+      name: "Farzana Mouary",
+      photoUrl: "../../../assets/images/selfies/farzana.png",
+      role: "Treasurer",
+      icons: [
+        {
+          icon: "fab fa-github",
+          colour: "d66ba0",
+          type: "github"
+        },
+        {
+          icon: "fab fa-linkedin",
+          colour: "#0077B5",
+          type: "linkedin"
+        }
+      ]
+    });
+    this.teamCards.push({
+      name: "Devon",
+      photoUrl: "../../../assets/images/selfies/devon.png",
+      role: "Treasurer",
       icons: [
         {
           icon: "fab fa-github",
@@ -91,7 +121,6 @@ export class TeamComponent implements OnInit {
       name: "Utsav Dave",
       photoUrl: "../../../assets/images/selfies/david.png",
       role: "Software Developer",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       icons: [
         {
           icon: "fab fa-github",
@@ -110,7 +139,6 @@ export class TeamComponent implements OnInit {
       name: "Ryan Murphy",
       photoUrl: "../../../assets/images/selfies/bryan.png",
       role: "Software Developer",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
       icons: [
         {
           icon: "fab fa-github",
@@ -125,10 +153,9 @@ export class TeamComponent implements OnInit {
       ]
     });
     this.teamCards.push({
-      name: "David Jane",
-      photoUrl: "src\assets\images\right-logo.png",
-      role: "Lead",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
+      name: "Jonathan Shemon",
+      photoUrl: "../../../assets/images/selfies/jonathan.png",
+      role: "1st Year Rep",
       icons: [
         {
           icon: "fab fa-github",
@@ -142,6 +169,7 @@ export class TeamComponent implements OnInit {
         }
       ]
     });
+   
     this.responsiveOptions = [
       {
           breakpoint: '1024px',

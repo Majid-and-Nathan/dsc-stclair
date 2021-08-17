@@ -15,12 +15,15 @@
 .subtitle {
   text-align: center;
   color: #1b2733;
+  font-family: "Google Sans Bold", sans-serif;
+  font-size:  32px;
 }
 
 .text {
   text-align: center;
   color: #637282;
-  font-size: 14px;
+  font-size:  1.2rem;
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .email-button {
@@ -30,6 +33,7 @@
   color: $white;
   box-shadow: none;
   transition: ease-in-out 0.2s;
+  font-family: "Google Sans Bold", sans-serif;
   padding: 8px 15px 8px 15px;
 }
 

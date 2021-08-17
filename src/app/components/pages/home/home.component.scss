@@ -4,9 +4,12 @@
   display: flex;
   justify-content: center;
   padding: 0px !important;
+/* Resize the background image to cover the entire container */
+
 }
 
 .content-container {
+  
   display: flex;
   width: 70%;
   height: 100%;
@@ -140,18 +143,19 @@
 .title > h2,
 h4 {
   color: #1b2733;
+  font-family: 'Google Sans Bold';
 }
 
 .hero-blurb {
   margin-top: 40px;
-  font-family: "Google Sans" !important;
+  font-family: "Google Sans Regular" !important;
 }
 
 .hero-blurb > p {
   line-height: 29px;
   text-align: left;
   color: #637282;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 
