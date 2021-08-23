@@ -15,25 +15,17 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     this.icons.push({
       name: "fab fa-discord",
-      href: "#"
+      href: "https://discord.gg/fTBhdtmY"
     });
-    this.icons.push({
-      name: "fab fa-facebook",
-      href: "#"
-    });
-
     this.icons.push({
       name: "fab fa-github",
-      href: "#"
+      href: "https://github.com/dsc-stclair"
     });
     this.icons.push({
       name: "fab fa-linkedin",
-      href: "#"
+      href: "https://www.linkedin.com/company/developer-student-club-st-clair-college/"
     });
-    this.icons.push({
-      name: "fab fa-instagram",
-      href: "#"
-    });
+
 
     this.credit = `${(new Date()).getFullYear().toString()} | All rights reserved.`;
   }

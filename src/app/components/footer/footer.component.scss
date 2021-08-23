@@ -5,13 +5,14 @@
     width: 100%;
     background-color: #f8f9fa;
     padding: 50px;
+    
 }
 
 .container {
     display: flex;
     width: 95%;
     height: 100%;
-
+    margin: 0 auto;
     @include mobile {
         flex-direction: column;
         width: 100%;

@@ -9,7 +9,9 @@
     <h3> {{ card.role }}</h3>
     <p>{{ card.description }}</p>
     <div class="socials">
-      <i *ngFor="let item of card.icons" [class]="item.icon + ' icon'"></i>
+      <a *ngFor="let item of card.icons" [href]='item.href'>
+      <i  [class]="item.icon + ' icon'" ></i>
+    </a>
     </div>
   </div>
 </div>

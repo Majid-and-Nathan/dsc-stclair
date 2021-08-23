@@ -15,21 +15,21 @@ export class TechnologiesComponent implements OnInit {
 
   ngOnInit(): void {
     this.technologiesCards.push({
-      title: "Angular",
-      description: "The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.",
-      image: "https://img.icons8.com/material-outlined/48/000000/flutter.png",
-      cardType: CardType.TECHNOLOGIES
-    });
-    this.technologiesCards.push({
       title: "Flutter",
-      description: "The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.",
-      image: "https://img.icons8.com/material-outlined/48/000000/flutter.png",
+      description: "We use Flutter for all of our mobile applications. To learn more about Flutter, check out the docs ",
+      href: "https://flutter.dev/docs",
       cardType: CardType.TECHNOLOGIES
     });
     this.technologiesCards.push({
-      title: "C#/.NET",
-      description: "The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.",
-      image: "https://img.icons8.com/material-outlined/48/000000/flutter.png",
+      title: "Angular",
+      description: "For our web applications, we use Angular. If  you'd like to learn more about Angular, check out the docs ",
+      href: "https://angular.io/docs",
+      cardType: CardType.TECHNOLOGIES
+    });
+    this.technologiesCards.push({
+      title: ".NET Core",
+      href: "https://docs.microsoft.com/en-us/dotnet/?WT.mc_id=dotnet-35129-website",
+      description: "For our backend, we use .NET. To learn more about .NET, you can find the docs ",
       cardType: CardType.TECHNOLOGIES
     });
   }

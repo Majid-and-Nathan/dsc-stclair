@@ -3,6 +3,7 @@
         <img *ngIf="card.cardType === CardType.TECHNOLOGIES" [src]="card.image" class="ghost-icon"/>
         <i *ngIf="card.cardType === CardType.ABOUT" [class]="'ghost-icon ' + card.icon" [style]="'-webkit-text-stroke: 2px #' + card.colour + ';'"></i>
         <h4 class="feature-title">{{card.title}}</h4>
-        <p>{{card.description}}</p>
+        <p>{{card.description}} <a *ngIf="card.cardType === CardType.TECHNOLOGIES" href="{{card.href}}">here.</a> </p>
+  
     </div>
 </div>

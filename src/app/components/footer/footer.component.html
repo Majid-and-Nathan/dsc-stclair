@@ -1,61 +1,78 @@
 <footer class="footer-container">
-    <div class="container">
-        <div class="logo-container">
-            <img class="logo" src="../../../assets/images/DSC-Horizontal.png">
-            <div class="logo-content">
-                <div class="credit">
-                    <span>&copy; {{credit}}</span>
-                </div>
-                <div class="socials">
-                    <i *ngFor="let item of icons" [class]="item.name + ' icon'" (click)="navigate(item.href)"></i>
-                </div>
-            </div>
+  <div class="container">
+    <div class="logo-container">
+      <img class="logo" src="../../../assets/images/DSC-Horizontal.png" />
+      <div class="logo-content">
+        <div class="credit">
+          <span>&copy; {{ credit }}</span>
         </div>
-        <div class="content-container">
-            <div class="link-group">
-                <h4 class="footer-heading">Connect</h4>
-                <ul class="list">
-                    <li class="item">
-                        <a href="https://gdsc.community.dev/university-of-windsor/">GDSC University of Windsor</a>
-                    </li>
-                    <li class="item">
-                        <a href="https:/www.womentechmakers.com/">Women Techmakers</a>
-                    </li>
-                    <li class="item">
-                        <a href="https://developers.google.com/community/gdg">Google Developer Groups</a>
-                    </li>
-                    <li class="item">
-                        <a href="https://developers.google.com/community/experts">Google Developer Experts</a>
-                    </li>
-                  
-                </ul>
-            </div>
-            <div class="link-group">
-                <h4 class="footer-heading">Developers</h4>
-                <ul class="list">
-                    <li class="item">
-                        <a href="https://www.linkedin.com/in/nathan-romero-1f5">Nathan Romero</a>
-                    </li>
-                    <li class="item">
-                        <a href="https://www.linkedin.com/in/majidjoseph">Majid Joseph</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="link-group">
-                <h4 class="footer-heading">Contribute</h4>
-                <ul class="list">
-                    <li class="item">
-                        <a routerLink="">Women Techmakers</a>
-                    </li>
-                    <li class="item">
-                        <a href="https://developers.google.com/community/gdg">Google Developer Groups</a>
-                    </li>
-                    <li class="item">
-                        <a routerLink="">Google Developer Experts</a>
-                    </li>
-                    
-                </ul>
-            </div>
+        <div class="socials">
+          <a *ngFor="let item of icons" [href]="item.href">
+            <i [class]="item.name + ' icon'"></i>
+          </a>
         </div>
+      </div>
     </div>
+    <div class="content-container">
+      <div class="link-group">
+        <h4 class="footer-heading">Connect</h4>
+        <ul class="list">
+          <li class="item">
+            <a href="https://gdsc.community.dev/university-of-windsor/"
+              >GDSC University of Windsor</a
+            >
+          </li>
+          <li class="item">
+            <a href="https:/www.womentechmakers.com/">Women Techmakers</a>
+          </li>
+          <li class="item">
+            <a href="https://developers.google.com/community/gdg"
+              >Google Developer Groups</a
+            >
+          </li>
+          <li class="item">
+            <a href="https://developers.google.com/community/experts"
+              >Google Developer Experts</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h4 class="footer-heading">Connect</h4>
+        <ul class="list">
+          <li class="item">
+            <a href="https://gdsc.community.dev/university-of-windsor/"
+              >GDSC University of Windsor</a
+            >
+          </li>
+          <li class="item">
+            <a href="https:/www.womentechmakers.com/">Women Techmakers</a>
+          </li>
+          <li class="item">
+            <a href="https://developers.google.com/community/gdg"
+              >Google Developer Groups</a
+            >
+          </li>
+          <li class="item">
+            <a href="https://developers.google.com/community/experts"
+              >Google Developer Experts</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h4 class="footer-heading">Developers</h4>
+        <ul class="list">
+          <li class="item">
+            <a href="https://www.linkedin.com/in/nathan-romero-1f5"
+              >Nathan Romero</a
+            >
+          </li>
+          <li class="item">
+            <a href="https://www.linkedin.com/in/majidjoseph">Majid Joseph</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </footer>

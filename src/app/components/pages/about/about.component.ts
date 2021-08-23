@@ -17,21 +17,22 @@ export class AboutComponent implements OnInit {
     this.aboutCards.push({
       title: "Concept of DSC",
       description: "The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.",
-      icon: "fas fa-graduation-cap",
-      colour: "4285F4",
+      icon: "fas fa-lightbulb",
+      colour: "F4B400",
       cardType: CardType.ABOUT
     });
     this.aboutCards.push({
-      title: "Why DSC?",
-      description: "For students to learn development skills, solve problems through technology and inspire them to be world class developers and changemakers.",
+      title: "Software Development",
+      description: "Students will become better developers through projects, contests and workshops. There will also be resources for students to better develop their portfolios/resumes.  ",
       icon: "fas fa-code",
       colour: "DB4437",
       cardType: CardType.ABOUT
     });
+
     this.aboutCards.push({
-      title: "Target audience",
-      description: "DSC activities are targeted at University students and any others including faculty members who want to learn development skills & work to solve real-life problems.",
-      icon: "fas fa-users",
+      title: "Collaboration",
+      description: "Members of the club will belong to a community passionate about technology. There will be opportunities for members to work together on projects to strengthen communication and soft-skills.",
+      icon: "fas fa-people-carry",
       colour: "0F9D58",
       cardType: CardType.ABOUT
     });

@@ -112,13 +112,13 @@
   transition-delay: 2s;
 
   @include mobile {
-    width: 30vw;
+    width: 90px;
   }
   @include tablets {
-    width: 30vw;
+    width:90px;
   }
   @include very-small-screens {
-    width: 30vw;
+    width:90px;
   }
 }
 
