@@ -84,16 +84,7 @@ export class TeamComponent implements OnInit {
       photoUrl: "../../../assets/images/selfies/jonathan.png",
       role: "Treasurer",
       icons: [
-        {
-          icon: "fab fa-github",
-          colour: "d66ba0",
-          type: "github"
-        },
-        {
-          icon: "fab fa-linkedin",
-          colour: "#0077B5",
-          type: "linkedin"
-        }
+      
       ]
     });
     this.teamCards.push({
@@ -118,7 +109,7 @@ export class TeamComponent implements OnInit {
     this.teamCards.push({
       name: "Devon",
       photoUrl: "../../../assets/images/selfies/devon.png",
-      role: "Treasurer",
+      role: "Relations Director",
       icons: [
         {
           icon: "fab fa-github",
@@ -139,12 +130,7 @@ export class TeamComponent implements OnInit {
       photoUrl: "../../../assets/images/selfies/niko.png",
       role: "Social Media Coordinator",
       icons: [
-        {
-          icon: "fab fa-linkedin",
-          colour: "#ffffff",
-          type: "linkedin"
-         
-        }
+      
       ]
     });
     this.teamCards.push({
@@ -198,11 +184,7 @@ export class TeamComponent implements OnInit {
       photoUrl: "../../../assets/images/selfies/justin.png",
       role: "1st Year Rep",
       icons: [
-        {
-          icon: "fab fa-github",
-          colour: "#0077B5",
-          type: "linkedin"
-        }
+      
       ]
     });
    

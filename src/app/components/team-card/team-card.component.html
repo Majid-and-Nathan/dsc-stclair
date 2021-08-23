@@ -12,6 +12,9 @@
       <a *ngFor="let item of card.icons" [href]='item.href'>
       <i  [class]="item.icon + ' icon'" ></i>
     </a>
+  
+      <i  *ngIf="card.icons.length == 0" class="fab fa-github icon-holder" ></i>
+  
     </div>
   </div>
 </div>
