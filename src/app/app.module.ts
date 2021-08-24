@@ -82,12 +82,10 @@ import { TeamCardComponent } from './components/team-card/team-card.component';
     CommonModule,
     FontAwesomeModule,
     CarouselModule,
-    ScrollTopModule,
+    ScrollTopModule
 
 
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyB_IqP4L2d8rSIkgt1M0ak0BIh3ZlTAADo',
-    }),
+   
   ],
   providers: [
     NgDialogAnimationService,
