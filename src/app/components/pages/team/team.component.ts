@@ -17,7 +17,7 @@ export class TeamComponent implements OnInit {
     
     this.teamCards.push({
       name: "Nathan Romero",
-      photoUrl: "../../../assets/images/selfies/nathan.png",
+      photoUrl: "src\assets\images\selfies\nathan.png",
       role: "Lead",
       icons: [
         {
@@ -39,7 +39,7 @@ export class TeamComponent implements OnInit {
     this.teamCards.push({
       name: "Omar Yousef",
       role: "Co-Lead",
-      photoUrl: "../../../assets/images/selfies/omar.png",
+      photoUrl: "src\assets\images\selfies\omar.png",
       icons: [
         {
           icon: "fab fa-linkedin",
@@ -50,7 +50,7 @@ export class TeamComponent implements OnInit {
     this.teamCards.push({
       name: "Wusiman Yibulayin",
       role: "Technical Lead",
-      photoUrl: "../../../assets/images/selfies/wusiman.png",
+      photoUrl: "src\assets\images\selfies\wusiman.png",
       icons: [
         {
           icon: "fab fa-linkedin",
@@ -63,7 +63,7 @@ export class TeamComponent implements OnInit {
     this.teamCards.push({
       name: "Brooke Baird",
       role: "Secretary",
-      photoUrl: "../../../assets/images/selfies/brooke.png",
+      photoUrl: "src\assets\images\selfies\brooke.png",
       icons: [
         {
           icon: "fab fa-github",
@@ -81,7 +81,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Jonathan Shemon",
-      photoUrl: "../../../assets/images/selfies/jonathan.png",
+      photoUrl: "src\assets\images\selfies\jonathan.png",
       role: "Treasurer",
       icons: [
       
@@ -89,7 +89,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Huzeir Kurpejovic",
-      photoUrl: "../../../assets/images/selfies/huzier.png",
+      photoUrl: "src\assets\images\selfies\huzier.png",
       role: "Event Manager",
       icons: [
         {
@@ -107,8 +107,8 @@ export class TeamComponent implements OnInit {
       ]
     });
     this.teamCards.push({
-      name: "Devon",
-      photoUrl: "../../../assets/images/selfies/devon.png",
+      name: "Devon Divinecz",
+      photoUrl: "src\assets\images\selfies\devon.png",
       role: "Relations Director",
       icons: [
         {
@@ -127,7 +127,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Niko Bilicic",
-      photoUrl: "../../../assets/images/selfies/niko.png",
+      photoUrl: "src\assets\images\selfies\niko.png",
       role: "Social Media Coordinator",
       icons: [
       
@@ -135,7 +135,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Utsav Dave",
-      photoUrl: "../../../assets/images/selfies/david.png",
+      photoUrl: "src\assets\images\selfies\david.png",
       role: "Software Developer",
       icons: [
         {
@@ -149,7 +149,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Ryan Murphy",
-      photoUrl: "../../../assets/images/selfies/bryan.png",
+      photoUrl: "src\assets\images\selfies\bryan.png",
       role: "Software Developer",
       icons: [
         {
@@ -162,7 +162,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Josh Iovino",
-      photoUrl: "../../../assets/images/selfies/avatar.png",
+      photoUrl: "src\assets\images\selfies\avatar.png",
       role: "Software Developer",
       icons: [
         {
@@ -181,7 +181,7 @@ export class TeamComponent implements OnInit {
     });
     this.teamCards.push({
       name: "Justin Dunn",
-      photoUrl: "../../../assets/images/selfies/justin.png",
+      photoUrl: "src\assets\images\selfies\justin.png",
       role: "1st Year Rep",
       icons: [
       
