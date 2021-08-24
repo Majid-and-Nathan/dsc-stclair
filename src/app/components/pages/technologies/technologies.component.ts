@@ -16,7 +16,7 @@ export class TechnologiesComponent implements OnInit {
   ngOnInit(): void {
     this.technologiesCards.push({
       title: "Flutter",
-      description: "We use Flutter for all of our mobile applications. To learn more about Flutter, check out the docs ",
+      description: "We use Flutter for our mobile applications. To learn more about Flutter, check out the docs ",
       href: "https://flutter.dev/docs",
       cardType: CardType.TECHNOLOGIES
     });

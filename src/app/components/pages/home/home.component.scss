@@ -112,10 +112,10 @@
   transition-delay: 2s;
 
   @include mobile {
-    width: 90px;
+    width: 60px;
   }
   @include tablets {
-    width:90px;
+    width: 90px;
   }
   @include very-small-screens {
     width:90px;
@@ -130,10 +130,10 @@
  
 
   @include mobile {
-    width: 50vw;
+    width: 60vw;
   }
   @include tablets {
-    width: 40vw;
+    width: 50vw;
   }
   @include very-small-screens {
     width: 60vw;
@@ -208,6 +208,12 @@ body {
     display: none;
   }
 }
+@media (max-width: 1570px) {
+  .Header__svg {
+    display: none;
+  }
+}
+
 .Header__title {
   font-family: Avenir, Futura, "Open Sans", "Gill Sans", "Helvetica Neue", Ariel, sans-serif;
   font-weight: bold;
