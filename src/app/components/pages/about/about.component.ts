@@ -15,8 +15,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.aboutCards.push({
-      title: "Concept of DSC",
-      description: "The DSC program is a grassroots channel through which Google provides development skills, mobile and web development skills for students, towards employability.",
+      title: "What is a GDSC?",
+      description: "Google Developer Student Clubs are groups for college and university students interested in Google technologies. Students from any programs with an interest in growing as a developer are welcome.",
       icon: "fas fa-lightbulb",
       colour: "F4B400",
       cardType: CardType.ABOUT
