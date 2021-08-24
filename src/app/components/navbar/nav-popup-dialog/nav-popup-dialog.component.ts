@@ -24,7 +24,8 @@ export class NavPopupDialogComponent implements OnInit {
   goToPage() {
     setTimeout(()=>{
       this.dialogRef.close();
-      this.location.replaceState("")
+      this.location.replaceState("");
+      window.location.reload();
     }, 5); 
 
    
