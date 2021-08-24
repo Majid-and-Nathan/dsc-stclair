@@ -107,7 +107,7 @@ export class TeamComponent implements OnInit {
       ]
     });
     this.teamCards.push({
-      name: "Devon",
+      name: "Devon Divinecz",
       photoUrl: "assets/images/selfies/devon.png",
       role: "Relations Director",
       icons: [
