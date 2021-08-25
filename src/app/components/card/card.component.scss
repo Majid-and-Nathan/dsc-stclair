@@ -50,4 +50,10 @@ p {
 .about-fixed {
     height: 300px;
     max-width: 380px;
+    
+}
+@media (max-width: 1023px) {
+    .about-fixed {
+        max-width: none !important;
+    }
 }
