@@ -1,4 +1,4 @@
-<div class="feature-card">
+<div class="feature-card" [ngClass]="card.cardType === CardType.ABOUT ? 'about-fixed' : ''">
     <div class="feature-card__body">
         <img *ngIf="card.cardType === CardType.TECHNOLOGIES" [src]="card.image" class="ghost-icon"/>
         <i *ngIf="card.cardType === CardType.ABOUT" [class]="'ghost-icon ' + card.icon" [style]="'-webkit-text-stroke: 2px #' + card.colour + ';'"></i>
