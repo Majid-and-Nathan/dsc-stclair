@@ -18,7 +18,10 @@
   color: #1b2733;
   text-align: center;
 }
-
+h2 {
+  color: #1b2733;
+  font-family: 'Google Sans Bold';
+}
 :host {
   ::ng-deep .prime-slider-override {
     .p-link {
