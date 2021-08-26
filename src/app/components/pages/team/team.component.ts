@@ -44,7 +44,8 @@ export class TeamComponent implements OnInit {
         {
           icon: "fab fa-linkedin",
           colour: "#0077B5",
-          type: "linkedin"
+          type: "linkedin",
+          href: "https://linkedin.com/in/omar-yousef-257305194"
         }
       ]});
     this.teamCards.push({
