@@ -8,7 +8,10 @@ import * as AOS from 'aos';
 })
 export class AppComponent {
   ngOnInit() {
-    AOS.init()
+    AOS.init();
+    if (window.location.hash === '#') {
+      window.location.hash = '';
+    }
   }
   title = 'angular-boiler-plate';
 
