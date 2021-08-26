@@ -58,6 +58,6 @@ p {
 @media (max-width: 1024px) {
     .about-fixed {
         max-width: none !important;
-        height: 262px;
+        min-height: 262px !important;
     }
 }
