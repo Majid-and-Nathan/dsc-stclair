@@ -15,21 +15,18 @@ export class TechnologiesComponent implements OnInit {
 
   ngOnInit(): void {
     this.technologiesCards.push({
-      title: "Flutter",
-      description: "We use Flutter for our mobile applications. To learn more about Flutter, check out the docs ",
-      href: "https://flutter.dev/docs",
+      title: "Web Development",
+      description: "Students will get the opportunity to attend workshops or work on projects related to web development. They will learn about creating user friendly interfaces to help with portfolio and project development.",
       cardType: CardType.TECHNOLOGIES
     });
     this.technologiesCards.push({
-      title: "Angular",
-      description: "For our web applications, we use Angular. If  you'd like to learn more about Angular, check out the docs ",
-      href: "https://angular.io/docs",
+      title: "Mobile Application Development",
+      description: "Learn about developing mobile applications from the ground up. Resources will be provided for students to enhance their mobile application development skills.",
       cardType: CardType.TECHNOLOGIES
     });
     this.technologiesCards.push({
-      title: ".NET Core",
-      href: "https://docs.microsoft.com/en-us/dotnet/?WT.mc_id=dotnet-35129-website",
-      description: "For our backend, we use .NET. To learn more about .NET, you can find the docs ",
+      title: "Backend Development",
+      description: "Gain knowledge on the server side of an application. Learn about communicating between an application, server, and a database.",
       cardType: CardType.TECHNOLOGIES
     });
   }
