@@ -10,7 +10,9 @@
     -webkit-box-flex: 1;
     flex: 1;
 }
-
+.feature-card__body {
+    padding-bottom: 10px;
+}
 .ghost-icon {
     font-size: 40px;
     padding-bottom: 20px;
