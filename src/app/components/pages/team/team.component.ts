@@ -38,9 +38,15 @@ export class TeamComponent implements OnInit {
     );
     this.teamCards.push({
       name: "Omar Yousef",
-      role: "Co-Lead",
+      role: "Technical Lead",
       photoUrl: " assets/images/selfies/omar.png",
       icons: [
+        {
+          icon: "fab fa-github",
+          colour: "d66ba0",
+          type: "github",
+          href: "https://github.com/oyousef25"
+        },
         {
           icon: "fab fa-linkedin",
           colour: "#0077B5",
