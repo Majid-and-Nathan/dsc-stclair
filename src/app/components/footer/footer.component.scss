@@ -78,8 +78,7 @@
 }
 
 .socials {
-    display: flex;
-    flex-direction: row;
+  
     padding-top: 5px;
 }
 
@@ -153,6 +152,7 @@ li:first-of-type {
 
 li {
     margin: 10px 0;
+
 }
 
 .item > a {
@@ -161,4 +161,5 @@ li {
     background-color: transparent;
     line-height: 1;
     font-family: "Google Sans Regular", sans-serif;
+
 }
